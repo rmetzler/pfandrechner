@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UITableViewController {
+	NSArray *array;
 }
+
+- (IBAction) reset:(id)sender;
 
 @end

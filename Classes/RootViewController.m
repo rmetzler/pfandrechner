@@ -6,21 +6,78 @@
 //  Copyright 2011 Metzler. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "RootViewController.h"
-#import "CustomCell.h"
+#import "ProductCell.h"
+#import "Product.h"
+
+/*
+@interface UILabel (BPExtensions)
+- (void)sizeToFitFixedWidth:(NSInteger)fixedWidth;
+@end
+
+@implementation UILabel (BPExtensions)
+
+
+- (void)sizeToFitFixedWidth:(NSInteger)fixedWidth
+{
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, fixedWidth, 0);
+    self.lineBreakMode = UILineBreakModeWordWrap;
+    self.numberOfLines = 0;
+    [self sizeToFit];
+}
+@end
+*/
 
 @implementation RootViewController
+
+#pragma mark consts
+
+//#define kCustomCellNib @"ProductCell"
+#define kCustomCellNib @"ProductCellv2"
 
 
 #pragma mark -
 #pragma mark View lifecycle
 
+//TODO: Einkauf dazurechnen
+//Wie teuer ist eine Flasche beim Einkauf?
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	UIBarButtonItem *resetButton = [[UIBarButtonItem alloc] 
+									initWithTitle:@"Reset"
+									style:UIBarButtonItemStyleBordered 
+									target:self action:@selector(reset:)];
+	
+	self.navigationItem.leftBarButtonItem = resetButton;
+	
+	[resetButton release];
+	
+	
+	array = [[NSArray alloc] initWithObjects:
+			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"1.5l Einweg Pfandflasche"] autorelease],
+			 [[[Product alloc] initWith:0.15 img: @"picture.jpg" desc: @"Club Mate Flasche"] autorelease],
+			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"Bierflaschen Bionade"] autorelease],
+			 [[[Product alloc] initWith:0.08 img: @"picture.jpg" desc: @"test"] autorelease],
+			 [[[Product alloc] initWith:0.15 img: @"picture.jpg" desc: @"test"] autorelease],
+			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"test"] autorelease],
+			 [[[Product alloc] initWith:0.08 img: @"picture.jpg" desc: @"test"] autorelease],
+			 [[[Product alloc] initWith:0.15 img: @"picture.jpg" desc: @"test"] autorelease],
+			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"test"] autorelease],			 
+			 nil];
 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	for (Product *p in array) {
+		[p addObserver:self forKeyPath:@"product" options:0 context:nil];
+	}
+	
+
+	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 
@@ -65,7 +122,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [array count];
 }
 
 
@@ -73,30 +130,56 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView 
 		 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"CustomCell";
+    static NSString *cellIdentifier = @"ProductCellIdentifier";
     
-    CustomCell *cell = (CustomCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-		NSArray *nib =[[NSBundle mainBundle] loadNibNamed:@"CustomCell"
+    ProductCell *cell = (ProductCell *) [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+	if (cell == nil) {
+		NSArray *nib =[[NSBundle mainBundle] loadNibNamed:kCustomCellNib
 													owner:self 
 												  options:nil];
 		
         cell = [nib objectAtIndex:0];
-    }
+		
+		CAGradientLayer *gradient = [CAGradientLayer layer];
+		gradient.frame = cell.bounds;
+		gradient.colors = [NSArray arrayWithObjects:
+						   (id) [[UIColor whiteColor] CGColor],
+						   (id) [[UIColor lightGrayColor] CGColor],
+						   nil];
+		[cell.layer insertSublayer:gradient atIndex:0];
+		
+	} else {
+		// NSLog(@"Cell reused");
+	}
+
+
     
 	// Configure the cell.
-	//NSUInteger row = [indexPath row];
+	Product* product = [array objectAtIndex:[indexPath row]];
 	
-	cell.imageView.image = [UIImage imageNamed:@"picture.jpg"];
-	cell.nameLabel.text  = @"Coca Cola 1.000l";
-	cell.priceLabel.text = @"0.99€";
+	cell.product = product;
 	
+	cell.imageView.image = [UIImage imageNamed: product.image];
+	[cell.textView setContentToHTMLString:
+		[NSString stringWithFormat:@"<i>%@</i><br /><strong>%1.2f€</strong>",
+		 product.description, product.multiplicant]];
+
+	cell.nameLabel.text  = product.description;
+	cell.priceLabel.text = [NSString stringWithFormat:@"%1.2f€",product.multiplicant];
+	
+	cell.priceLabel.hidden = YES;
+	cell.nameLabel.hidden = YES;
+
+	
+	[cell updateCount:nil];
+	
+	[product addObserver:self forKeyPath:@"multiplier" options:NSKeyValueChangeSetting context:cell];
 	
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *) tableView
-heightForRowAtIndexPath:(NSIndexPath *) indexPath {
+- (CGFloat)tableView:(UITableView *) tableView heightForRowAtIndexPath:(NSIndexPath *) indexPath {
 	
 	return kTableViewRowHeight;
 }
@@ -124,7 +207,7 @@ heightForRowAtIndexPath:(NSIndexPath *) indexPath {
 */
 
 
-
+/*
 // Override to support rearranging the table view.
 - (void) tableView:(UITableView *)tableView 
 moveRowAtIndexPath:(NSIndexPath *)fromIndexPath 
@@ -132,7 +215,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 	
 	// TODO: rearrange
 }
-
+*/
 
 
 /*
@@ -163,6 +246,9 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 #pragma mark Memory management
 
 - (void)didReceiveMemoryWarning {
+	
+	NSLog(@"%@", __FUNCTION__);
+	
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
@@ -170,15 +256,59 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 }
 
 - (void)viewDidUnload {
+	NSLog(@"%@", __FUNCTION__);
+	
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
 
 
 - (void)dealloc {
+	[array release];
+	
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark IBActions
+
+
+-(void) calculate {
+
+	// alles zusammen addieren ...
+	double total = 0;
+	for(Product *p in array) {
+		total += [p.product doubleValue];
+	}
+
+	//NSLog(@"Gesamt: %f", total);
+
+	// ... und als title setzen ...
+	self.title = [NSString stringWithFormat:@"Gesamt: %.2f €", total];
+	
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath 
+					  ofObject:(id)object 
+						change:(NSDictionary *)change 
+					   context:(void *)context
+{
+	
+	[self calculate];
+
+}
+
+- (IBAction) reset:(id)sender {
+	//NSLog(@"Entering %s",__FUNCTION__);
+	for (Product *p in array) {
+		[p resetMultiplier];
+	}
+
+	[self calculate];
+	
+	[self.tableView reloadData];
+
+}
 
 @end
 

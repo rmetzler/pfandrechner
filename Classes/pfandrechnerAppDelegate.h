@@ -12,12 +12,13 @@
     
     UIWindow *window;
     UINavigationController *navigationController;
+	
+	IBOutlet UINavigationItem *navigationItem;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
-
--(IBAction) valueChanged:(id)sender;
+@property (nonatomic, retain) IBOutlet UINavigationItem *navigationItem;
 
 @end
 

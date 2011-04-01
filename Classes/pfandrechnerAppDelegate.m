@@ -14,7 +14,7 @@
 
 @synthesize window;
 @synthesize navigationController;
-
+@synthesize navigationItem;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-    
+
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
@@ -83,13 +83,6 @@
 	[navigationController release];
 	[window release];
 	[super dealloc];
-}
-
-#pragma mark -
-#pragma mark IBActions
-
--(IBAction) valueChanged:(id)sender {
-	
 }
 
 
