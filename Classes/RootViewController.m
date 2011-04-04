@@ -35,8 +35,12 @@
 #pragma mark consts
 
 //#define kCustomCellNib @"ProductCell"
-#define kCustomCellNib @"ProductCellv2"
-
+//#define kCustomCellNib @"ProductCellv2"
+//#define kCustomCellNib @"ProductCellv3"
+//#define kCustomCellNib @"ProductCellv4"
+#define kCustomCellNib @"ProductCellv5"
+//#define kStyle @"img1"
+#define kStyle @"img2" 
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -59,15 +63,15 @@
 	
 	
 	array = [[NSArray alloc] initWithObjects:
-			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"1.5l Einweg Pfandflasche"] autorelease],
-			 [[[Product alloc] initWith:0.15 img: @"picture.jpg" desc: @"Club Mate Flasche"] autorelease],
-			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"Bierflaschen Bionade"] autorelease],
-			 [[[Product alloc] initWith:0.08 img: @"picture.jpg" desc: @"test"] autorelease],
-			 [[[Product alloc] initWith:0.15 img: @"picture.jpg" desc: @"test"] autorelease],
-			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"test"] autorelease],
-			 [[[Product alloc] initWith:0.08 img: @"picture.jpg" desc: @"test"] autorelease],
-			 [[[Product alloc] initWith:0.15 img: @"picture.jpg" desc: @"test"] autorelease],
-			 [[[Product alloc] initWith:0.25 img: @"picture.jpg" desc: @"test"] autorelease],			 
+			 [[[Product alloc] initWith:0.15 img: @"limo.png" desc: @"Glasflasche Mehrweg"] autorelease],
+			 [[[Product alloc] initWith:0.15 img: @"cola.png" desc: @"Plastikflasche Mehrweg"] autorelease],
+			 [[[Product alloc] initWith:0.25 img: @"wasser.png" desc: @"Plastikflasche Einweg"] autorelease],
+			 [[[Product alloc] initWith:0.08 img: @"bier2.png"   desc: @"Bierflasche (Glas)"] autorelease],
+			 [[[Product alloc] initWith:0.15 img: @"bier1.png" desc: @"Bierflasche mit Bügel (Glas)"] autorelease],
+			 [[[Product alloc] initWith:0.25 img: @"dosen.png" desc: @"Dose"] autorelease],
+			 [[[Product alloc] initWith:0.15 img: @"picture.png" desc: @"Joghurt Glas"] autorelease],
+			 [[[Product alloc] initWith:1.50 img: @"kasten1.png" desc: @"Kasten (leer)"] autorelease],
+			 [[[Product alloc] initWith:0.75 img: @"kasten2.png" desc: @"Halber Kasten (leer)"] autorelease],
 			 nil];
 
 	for (Product *p in array) {
@@ -160,17 +164,12 @@
 	
 	cell.product = product;
 	
-	cell.imageView.image = [UIImage imageNamed: product.image];
-	[cell.textView setContentToHTMLString:
-		[NSString stringWithFormat:@"<i>%@</i><br /><strong>%1.2f€</strong>",
-		 product.description, product.multiplicant]];
-
-	cell.nameLabel.text  = product.description;
+	cell.imageView.image = [UIImage imageNamed: 
+							[NSString stringWithFormat:@"%@/%@", kStyle,	product.image]];
+	
+	cell.nameLabel.text = product.description;
 	cell.priceLabel.text = [NSString stringWithFormat:@"%1.2f€",product.multiplicant];
 	
-	cell.priceLabel.hidden = YES;
-	cell.nameLabel.hidden = YES;
-
 	
 	[cell updateCount:nil];
 	

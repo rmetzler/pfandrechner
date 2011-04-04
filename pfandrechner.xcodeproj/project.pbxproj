@@ -15,10 +15,21 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
-		7935598C131BFD25006796C3 /* picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7935598B131BFD25006796C3 /* picture.jpg */; };
+		793CB6D5134920CC00653AAD /* ProductCellv3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793CB6D4134920CC00653AAD /* ProductCellv3.xib */; };
+		793CB6F2134922B500653AAD /* ProductCellv4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793CB6F1134922B500653AAD /* ProductCellv4.xib */; };
 		793FABA3131BEB88003E811C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FABA2131BEB88003E811C /* ProductCell.m */; };
 		793FABA6131BEBBE003E811C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793FABA5131BEBBE003E811C /* ProductCell.xib */; };
 		799D47D51328E0430047C14B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 799D47D41328E0430047C14B /* Product.m */; };
+		79C92285134A5829006B7818 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C9227E134A5829006B7818 /* icon-72.png */; };
+		79C92286134A5829006B7818 /* icon-small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C9227F134A5829006B7818 /* icon-small-50.png */; };
+		79C92287134A5829006B7818 /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C92280134A5829006B7818 /* icon-small.png */; };
+		79C92288134A5829006B7818 /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C92281134A5829006B7818 /* icon-small@2x.png */; };
+		79C92289134A5829006B7818 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C92282134A5829006B7818 /* icon.png */; };
+		79C9228A134A5829006B7818 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C92283134A5829006B7818 /* icon@2x.png */; };
+		79C9228B134A5829006B7818 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 79C92284134A5829006B7818 /* iTunesArtwork */; };
+		79C922EC134A5E2E006B7818 /* img1 in Resources */ = {isa = PBXBuildFile; fileRef = 79C922DA134A5E2E006B7818 /* img1 */; };
+		79C922ED134A5E2E006B7818 /* img2 in Resources */ = {isa = PBXBuildFile; fileRef = 79C922E2134A5E2E006B7818 /* img2 */; };
+		79E6FEAE1349AEBC00E7EE98 /* ProductCellv5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FEAD1349AEBC00E7EE98 /* ProductCellv5.xib */; };
 		79F5EA9F13449C770021341A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F5EA9E13449C770021341A /* QuartzCore.framework */; };
 		79F5EB211345DCDB0021341A /* ProductCellv2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F5EB201345DCDB0021341A /* ProductCellv2.xib */; };
 /* End PBXBuildFile section */
@@ -27,24 +38,35 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* pfandrechnerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pfandrechnerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* pfandrechnerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pfandrechnerAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* pfandrechner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pfandrechner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Pfandrechner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pfandrechner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28A0AAE50D9B0CCF005BE974 /* pfandrechner_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pfandrechner_Prefix.pch; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* Pfandrechner_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pfandrechner_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7935598B131BFD25006796C3 /* picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = picture.jpg; path = ../../Desktop/picture.jpg; sourceTree = SOURCE_ROOT; };
+		793CB6D4134920CC00653AAD /* ProductCellv3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv3.xib; sourceTree = "<group>"; };
+		793CB6F1134922B500653AAD /* ProductCellv4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv4.xib; sourceTree = "<group>"; };
 		793FABA1131BEB88003E811C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ../ProductCell.h; sourceTree = "<group>"; };
 		793FABA2131BEB88003E811C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ../ProductCell.m; sourceTree = "<group>"; };
 		793FABA5131BEBBE003E811C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		799D47D31328E0430047C14B /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		799D47D41328E0430047C14B /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		79C9227E134A5829006B7818 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		79C9227F134A5829006B7818 /* icon-small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small-50.png"; sourceTree = "<group>"; };
+		79C92280134A5829006B7818 /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
+		79C92281134A5829006B7818 /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		79C92282134A5829006B7818 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		79C92283134A5829006B7818 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		79C92284134A5829006B7818 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		79C922DA134A5E2E006B7818 /* img1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img1; sourceTree = "<group>"; };
+		79C922E2134A5E2E006B7818 /* img2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img2; sourceTree = "<group>"; };
+		79E6FEAD1349AEBC00E7EE98 /* ProductCellv5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv5.xib; sourceTree = "<group>"; };
 		79F5EA9E13449C770021341A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		79F5EB201345DCDB0021341A /* ProductCellv2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv2.xib; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* pfandrechner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pfandrechner-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pfandrechner-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +102,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* pfandrechner.app */,
+				1D6058910D05DD3D006BFB54 /* Pfandrechner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,7 +122,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28A0AAE50D9B0CCF005BE974 /* pfandrechner_Prefix.pch */,
+				28A0AAE50D9B0CCF005BE974 /* Pfandrechner_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -109,12 +131,23 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7935598B131BFD25006796C3 /* picture.jpg */,
+				79C922DA134A5E2E006B7818 /* img1 */,
+				79C922E2134A5E2E006B7818 /* img2 */,
+				79C92284134A5829006B7818 /* iTunesArtwork */,
+				79C92282134A5829006B7818 /* icon.png */,
+				79C92283134A5829006B7818 /* icon@2x.png */,
+				79C9227E134A5829006B7818 /* icon-72.png */,
+				79C92280134A5829006B7818 /* icon-small.png */,
+				79C9227F134A5829006B7818 /* icon-small-50.png */,
+				79C92281134A5829006B7818 /* icon-small@2x.png */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* pfandrechner-Info.plist */,
+				8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */,
 				793FABA5131BEBBE003E811C /* ProductCell.xib */,
 				79F5EB201345DCDB0021341A /* ProductCellv2.xib */,
+				793CB6D4134920CC00653AAD /* ProductCellv3.xib */,
+				793CB6F1134922B500653AAD /* ProductCellv4.xib */,
+				79E6FEAD1349AEBC00E7EE98 /* ProductCellv5.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -133,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* pfandrechner */ = {
+		1D6058900D05DD3D006BFB54 /* Pfandrechner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "pfandrechner" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Pfandrechner" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -145,9 +178,9 @@
 			);
 			dependencies = (
 			);
-			name = pfandrechner;
+			name = Pfandrechner;
 			productName = pfandrechner;
-			productReference = 1D6058910D05DD3D006BFB54 /* pfandrechner.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Pfandrechner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* pfandrechner */,
+				1D6058900D05DD3D006BFB54 /* Pfandrechner */,
 			);
 		};
 /* End PBXProject section */
@@ -183,8 +216,19 @@
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				793FABA6131BEBBE003E811C /* ProductCell.xib in Resources */,
-				7935598C131BFD25006796C3 /* picture.jpg in Resources */,
 				79F5EB211345DCDB0021341A /* ProductCellv2.xib in Resources */,
+				793CB6D5134920CC00653AAD /* ProductCellv3.xib in Resources */,
+				793CB6F2134922B500653AAD /* ProductCellv4.xib in Resources */,
+				79E6FEAE1349AEBC00E7EE98 /* ProductCellv5.xib in Resources */,
+				79C92285134A5829006B7818 /* icon-72.png in Resources */,
+				79C92286134A5829006B7818 /* icon-small-50.png in Resources */,
+				79C92287134A5829006B7818 /* icon-small.png in Resources */,
+				79C92288134A5829006B7818 /* icon-small@2x.png in Resources */,
+				79C92289134A5829006B7818 /* icon.png in Resources */,
+				79C9228A134A5829006B7818 /* icon@2x.png in Resources */,
+				79C9228B134A5829006B7818 /* iTunesArtwork in Resources */,
+				79C922EC134A5E2E006B7818 /* img1 in Resources */,
+				79C922ED134A5E2E006B7818 /* img2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,9 +258,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = pfandrechner_Prefix.pch;
-				INFOPLIST_FILE = "pfandrechner-Info.plist";
-				PRODUCT_NAME = pfandrechner;
+				GCC_PREFIX_HEADER = Pfandrechner_Prefix.pch;
+				INFOPLIST_FILE = "Pfandrechner-Info.plist";
+				PRODUCT_NAME = Pfandrechner;
 			};
 			name = Debug;
 		};
@@ -226,9 +270,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = pfandrechner_Prefix.pch;
-				INFOPLIST_FILE = "pfandrechner-Info.plist";
-				PRODUCT_NAME = pfandrechner;
+				GCC_PREFIX_HEADER = Pfandrechner_Prefix.pch;
+				INFOPLIST_FILE = "Pfandrechner-Info.plist";
+				PRODUCT_NAME = Pfandrechner;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -263,7 +307,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "pfandrechner" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Pfandrechner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,

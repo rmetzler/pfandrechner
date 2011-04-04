@@ -81,7 +81,9 @@
 
 - (void)dealloc {
 	[navigationController release];
+	[navigationItem release];	 
 	[window release];
+	
 	[super dealloc];
 }
 
