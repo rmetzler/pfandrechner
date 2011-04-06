@@ -17,13 +17,13 @@
 @synthesize image;
 @synthesize description;
 
--(Product *) initWith:(double)m 
-				  img:(NSString *) img
-				 desc:(NSString *) desc {
+-(Product *) initWithPrice:(double) price
+					 image:(NSString *) img
+			   description:(NSString *) desc {
 	
 	self = [super init];
 	self.multiplier = 0;
-	self.multiplicant = m;
+	self.multiplicant = price;
 	
 	self.product = [NSNumber numberWithDouble:multiplier*multiplicant];
 	

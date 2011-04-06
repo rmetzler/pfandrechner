@@ -12,6 +12,8 @@
 #import "ProductCell.h"
 #import "Product.h"
 
+//#import "FlurryAPI.h"
+
 /*
 @interface UILabel (BPExtensions)
 - (void)sizeToFitFixedWidth:(NSInteger)fixedWidth;
@@ -39,8 +41,11 @@
 //#define kCustomCellNib @"ProductCellv3"
 //#define kCustomCellNib @"ProductCellv4"
 #define kCustomCellNib @"ProductCellv5"
+
 //#define kStyle @"img1"
-#define kStyle @"img2" 
+//#define kStyle @"img2" 
+//#define kStyle @"img3" 
+#define kStyle @"img4" 
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -63,15 +68,15 @@
 	
 	
 	array = [[NSArray alloc] initWithObjects:
-			 [[[Product alloc] initWith:0.15 img: @"limo.png" desc: @"Glasflasche Mehrweg"] autorelease],
-			 [[[Product alloc] initWith:0.15 img: @"cola.png" desc: @"Plastikflasche Mehrweg"] autorelease],
-			 [[[Product alloc] initWith:0.25 img: @"wasser.png" desc: @"Plastikflasche Einweg"] autorelease],
-			 [[[Product alloc] initWith:0.08 img: @"bier2.png"   desc: @"Bierflasche (Glas)"] autorelease],
-			 [[[Product alloc] initWith:0.15 img: @"bier1.png" desc: @"Bierflasche mit Bügel (Glas)"] autorelease],
-			 [[[Product alloc] initWith:0.25 img: @"dosen.png" desc: @"Dose"] autorelease],
-			 [[[Product alloc] initWith:0.15 img: @"picture.png" desc: @"Joghurt Glas"] autorelease],
-			 [[[Product alloc] initWith:1.50 img: @"kasten1.png" desc: @"Kasten (leer)"] autorelease],
-			 [[[Product alloc] initWith:0.75 img: @"kasten2.png" desc: @"Halber Kasten (leer)"] autorelease],
+			 [[[Product alloc] initWithPrice:0.15 image: @"limo.png"    description: @"Glasflasche Mehrweg"] autorelease],
+			 [[[Product alloc] initWithPrice:0.15 image: @"cola.png"    description: @"Plastikflasche Mehrweg"] autorelease],
+			 [[[Product alloc] initWithPrice:0.25 image: @"wasser.png"  description: @"Plastikflasche Einweg"] autorelease],
+			 [[[Product alloc] initWithPrice:0.08 image: @"bier2.png"   description: @"Bierflasche (Glas)"] autorelease],
+			 [[[Product alloc] initWithPrice:0.15 image: @"bier1.png"   description: @"Bierflasche mit Bügel (Glas)"] autorelease],
+			 [[[Product alloc] initWithPrice:0.25 image: @"dosen.png"   description: @"Dose"] autorelease],
+			 [[[Product alloc] initWithPrice:0.15 image: @"joghurt.png" description: @"Joghurt Glas"] autorelease],
+			 [[[Product alloc] initWithPrice:1.50 image: @"kasten1.png" description: @"Kasten (leer)"] autorelease],
+			 [[[Product alloc] initWithPrice:0.75 image: @"kasten2.png" description: @"Halber Kasten (leer)"] autorelease],
 			 nil];
 
 	for (Product *p in array) {
@@ -298,10 +303,16 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 }
 
 - (IBAction) reset:(id)sender {
-	//NSLog(@"Entering %s",__FUNCTION__);
+//	NSMutableDictionary *dict = [[NSMutableDictionary dictionary] autorelease];
+	
 	for (Product *p in array) {
+//		if (p.multiplier) {
+//			[dict setObject: [NSNumber numberWithInt:p.multiplier] forKey:(id)p.description];
+//		}
 		[p resetMultiplier];
 	}
+	
+//	[FlurryAPI logEvent:@"RESET" withParameters:dict];
 
 	[self calculate];
 	

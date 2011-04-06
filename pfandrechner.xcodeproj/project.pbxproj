@@ -19,6 +19,10 @@
 		793CB6F2134922B500653AAD /* ProductCellv4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793CB6F1134922B500653AAD /* ProductCellv4.xib */; };
 		793FABA3131BEB88003E811C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FABA2131BEB88003E811C /* ProductCell.m */; };
 		793FABA6131BEBBE003E811C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793FABA5131BEBBE003E811C /* ProductCell.xib */; };
+		79819A0E134CA2520076B852 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A0D134CA2520076B852 /* libFlurry.a */; };
+		79819A99134CB7C10076B852 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A98134CB7C10076B852 /* CoreFoundation.framework */; };
+		79819B07134CBE0A0076B852 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B06134CBE0A0076B852 /* AudioToolbox.framework */; };
+		79819B3D134CC2AD0076B852 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B3C134CC2AD0076B852 /* AVFoundation.framework */; };
 		799D47D51328E0430047C14B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 799D47D41328E0430047C14B /* Product.m */; };
 		79C92285134A5829006B7818 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C9227E134A5829006B7818 /* icon-72.png */; };
 		79C92286134A5829006B7818 /* icon-small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C9227F134A5829006B7818 /* icon-small-50.png */; };
@@ -29,6 +33,8 @@
 		79C9228B134A5829006B7818 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 79C92284134A5829006B7818 /* iTunesArtwork */; };
 		79C922EC134A5E2E006B7818 /* img1 in Resources */ = {isa = PBXBuildFile; fileRef = 79C922DA134A5E2E006B7818 /* img1 */; };
 		79C922ED134A5E2E006B7818 /* img2 in Resources */ = {isa = PBXBuildFile; fileRef = 79C922E2134A5E2E006B7818 /* img2 */; };
+		79C92319134B9AF5006B7818 /* img3 in Resources */ = {isa = PBXBuildFile; fileRef = 79C9230E134B9AF5006B7818 /* img3 */; };
+		79C92334134BBFFF006B7818 /* img4 in Resources */ = {isa = PBXBuildFile; fileRef = 79C92333134BBFFF006B7818 /* img4 */; };
 		79E6FEAE1349AEBC00E7EE98 /* ProductCellv5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FEAD1349AEBC00E7EE98 /* ProductCellv5.xib */; };
 		79F5EA9F13449C770021341A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F5EA9E13449C770021341A /* QuartzCore.framework */; };
 		79F5EB211345DCDB0021341A /* ProductCellv2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F5EB201345DCDB0021341A /* ProductCellv2.xib */; };
@@ -52,6 +58,11 @@
 		793FABA1131BEB88003E811C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ../ProductCell.h; sourceTree = "<group>"; };
 		793FABA2131BEB88003E811C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ../ProductCell.m; sourceTree = "<group>"; };
 		793FABA5131BEBBE003E811C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		79819A0C134CA2520076B852 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
+		79819A0D134CA2520076B852 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		79819A98134CB7C10076B852 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		79819B06134CBE0A0076B852 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		79819B3C134CC2AD0076B852 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		799D47D31328E0430047C14B /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		799D47D41328E0430047C14B /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		79C9227E134A5829006B7818 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
@@ -63,6 +74,8 @@
 		79C92284134A5829006B7818 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		79C922DA134A5E2E006B7818 /* img1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img1; sourceTree = "<group>"; };
 		79C922E2134A5E2E006B7818 /* img2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img2; sourceTree = "<group>"; };
+		79C9230E134B9AF5006B7818 /* img3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img3; sourceTree = "<group>"; };
+		79C92333134BBFFF006B7818 /* img4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img4; sourceTree = "<group>"; };
 		79E6FEAD1349AEBC00E7EE98 /* ProductCellv5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv5.xib; sourceTree = "<group>"; };
 		79F5EA9E13449C770021341A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		79F5EB201345DCDB0021341A /* ProductCellv2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv2.xib; sourceTree = "<group>"; };
@@ -78,6 +91,10 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
 				79F5EA9F13449C770021341A /* QuartzCore.framework in Frameworks */,
+				79819A0E134CA2520076B852 /* libFlurry.a in Frameworks */,
+				79819A99134CB7C10076B852 /* CoreFoundation.framework in Frameworks */,
+				79819B07134CBE0A0076B852 /* AudioToolbox.framework in Frameworks */,
+				79819B3D134CC2AD0076B852 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +127,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				79819A07134CA2520076B852 /* FlurryLib */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -131,11 +149,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				79C92284134A5829006B7818 /* iTunesArtwork */,
 				79C922DA134A5E2E006B7818 /* img1 */,
 				79C922E2134A5E2E006B7818 /* img2 */,
-				79C92284134A5829006B7818 /* iTunesArtwork */,
-				79C92282134A5829006B7818 /* icon.png */,
+				79C9230E134B9AF5006B7818 /* img3 */,
+				79C92333134BBFFF006B7818 /* img4 */,
 				79C92283134A5829006B7818 /* icon@2x.png */,
+				79C92282134A5829006B7818 /* icon.png */,
 				79C9227E134A5829006B7818 /* icon-72.png */,
 				79C92280134A5829006B7818 /* icon-small.png */,
 				79C9227F134A5829006B7818 /* icon-small-50.png */,
@@ -159,8 +179,20 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 				79F5EA9E13449C770021341A /* QuartzCore.framework */,
+				79819A98134CB7C10076B852 /* CoreFoundation.framework */,
+				79819B06134CBE0A0076B852 /* AudioToolbox.framework */,
+				79819B3C134CC2AD0076B852 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79819A07134CA2520076B852 /* FlurryLib */ = {
+			isa = PBXGroup;
+			children = (
+				79819A0C134CA2520076B852 /* FlurryAPI.h */,
+				79819A0D134CA2520076B852 /* libFlurry.a */,
+			);
+			path = FlurryLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +261,8 @@
 				79C9228B134A5829006B7818 /* iTunesArtwork in Resources */,
 				79C922EC134A5E2E006B7818 /* img1 in Resources */,
 				79C922ED134A5E2E006B7818 /* img2 in Resources */,
+				79C92319134B9AF5006B7818 /* img3 in Resources */,
+				79C92334134BBFFF006B7818 /* img4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +294,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Pfandrechner_Prefix.pch;
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLib\"",
+				);
 				PRODUCT_NAME = Pfandrechner;
 			};
 			name = Debug;
@@ -272,6 +310,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Pfandrechner_Prefix.pch;
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLib\"",
+				);
 				PRODUCT_NAME = Pfandrechner;
 				VALIDATE_PRODUCT = YES;
 			};

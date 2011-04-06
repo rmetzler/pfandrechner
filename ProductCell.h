@@ -36,5 +36,6 @@
 -(IBAction) decCount:	(id)sender;
 -(IBAction) segmentedControlPressed:(id) sender;
 -(IBAction) updateCount:(id)sender;
+-(IBAction) playSound:  (id) sender;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ProductCell.h"
 #import "Product.h"
+#import <AudioToolbox/AudioServices.h> 
 
 @implementation ProductCell
 @synthesize nameLabel;
@@ -78,11 +79,22 @@
 {
 	UISegmentedControl *control = (UISegmentedControl *) sender;
 	if (0 == control.selectedSegmentIndex ) {
+		[self playSound:sender];
 		[self decCount:sender];
 	} else {
+		[self playSound:sender];
 		[self incCount:sender];
 	}
 
+}
+
+- (IBAction) playSound:(id) sender 
+{
+	NSString *path = [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff"]; 
+	SystemSoundID soundID; 
+	AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:path], &soundID); 
+	AudioServicesPlaySystemSound(soundID); 
+	AudioServicesDisposeSystemSoundID(soundID); 	
 }
 
 @end

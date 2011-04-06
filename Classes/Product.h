@@ -19,9 +19,9 @@
 	NSString *description;
 }
 
--(Product *) initWith:(double)m 
-				  img:(NSString *) img
-				 desc:(NSString *) desc;
+-(Product *) initWithPrice:(double)price
+					 image:(NSString *) img
+			   description:(NSString *) desc;
 	
 @property double multiplicant;
 @property int multiplier;

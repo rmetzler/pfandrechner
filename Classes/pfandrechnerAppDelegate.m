@@ -9,6 +9,8 @@
 #import "pfandrechnerAppDelegate.h"
 #import "RootViewController.h"
 
+// Flurry Analytics
+#import "FlurryAPI.h"
 
 @implementation pfandrechnerAppDelegate
 
@@ -19,16 +21,22 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+void uncaughtExceptionHandler(NSException *exception) {
+    [FlurryAPI logError:@"Uncaught" message:@"Crash!" exception:exception];
+}
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
-    // Override point for customization after application launch.
+    // Analytics
+	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+//	[FlurryAPI startSession:@"UGIQ3KHB88KBB5LSLHGC"];
 
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
 
-    return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
