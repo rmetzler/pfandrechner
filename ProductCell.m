@@ -6,7 +6,7 @@
 //  Copyright 2011 Metzler. All rights reserved.
 //
 
-#import "pfandrechnerAppDelegate.h"
+#import "PfandrechnerAppDelegate.h"
 #import "ProductCell.h"
 #import "Product.h"
 #import <AudioToolbox/AudioServices.h> 
@@ -109,7 +109,7 @@
 	[player prepareToPlay];
 */
 	
-	pfandrechnerAppDelegate *app = (pfandrechnerAppDelegate *) [[UIApplication sharedApplication] delegate];
+	PfandrechnerAppDelegate *app = (PfandrechnerAppDelegate *) [[UIApplication sharedApplication] delegate];
 	[app.player play];
 }
 

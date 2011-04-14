@@ -6,13 +6,13 @@
 //  Copyright 2011 Metzler. All rights reserved.
 //
 
-#import "pfandrechnerAppDelegate.h"
+#import "PfandrechnerAppDelegate.h"
 #import "RootViewController.h"
 
 // Flurry Analytics
 #import "FlurryAPI.h"
 
-@implementation pfandrechnerAppDelegate
+@implementation PfandrechnerAppDelegate
 
 @synthesize window;
 @synthesize navigationController;

@@ -275,7 +275,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
+									<integer>10</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -317,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>pfandrechnerAppDelegate.m</string>
+								<string>PfandrechnerAppDelegate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,15 +326,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>pfandrechnerAppDelegate.m</string>
+										<string>PfandrechnerAppDelegate.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>79AD891D1357215F0083A3EB</string>
+										<string>79AD89281357232B0083A3EB</string>
 										<key>history</key>
 										<array>
 											<string>79AD8915135721260083A3EB</string>
-											<string>79AD8916135721260083A3EB</string>
+											<string>79AD89251357232B0083A3EB</string>
+											<string>79AD89261357232B0083A3EB</string>
+											<string>79AD89271357232B0083A3EB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -531,13 +534,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>79AD891E1357215F0083A3EB</string>
+		<string>799D47DF1328E3C30047C14B</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>79AD8904135720280083A3EB</string>
 		<string>79AD8905135720280083A3EB</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>793FAB79131AC48F003E811C</string>
-		<string>/Users/richard/Code/pfandrechner/pfandrechner.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/richard/Code/pfandrechner/pfandrechner.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 59 1280 719 0 0 1280 778 </string>
@@ -835,8 +839,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>797B4B021356EB6800C8D4E0</string>
-				<string>797B4B031356EB6800C8D4E0</string>
+				<string>79AD8922135722EA0083A3EB</string>
+				<string>79AD8923135722EA0083A3EB</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -1402,7 +1406,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>799D47DF1328E3C30047C14B</string>
-				<string>797B4B471357001D00C8D4E0</string>
+				<string>79AD89291357232B0083A3EB</string>
 				<string>799D47DE1328E3C30047C14B</string>
 			</array>
 			<key>WindowString</key>
