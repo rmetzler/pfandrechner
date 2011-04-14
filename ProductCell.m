@@ -90,7 +90,8 @@
 
 - (IBAction) playSound:(id) sender 
 {
-	NSString *path = [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff"]; 
+	NSLog(@"play tock");
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"tock" ofType:@"caf"]; 
 	SystemSoundID soundID; 
 	AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:path], &soundID); 
 	AudioServicesPlaySystemSound(soundID); 

@@ -55,7 +55,7 @@
 									<object class="IBUIImageView" id="443460794">
 										<reference key="NSNextResponder" ref="835573720"/>
 										<int key="NSvFlags">292</int>
-										<string key="NSFrame">{{5, 10}, {70, 70}}</string>
+										<string key="NSFrame">{{5, 9}, {71, 71}}</string>
 										<reference key="NSSuperview" ref="835573720"/>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -63,7 +63,7 @@
 									<object class="IBUILabel" id="732863647">
 										<reference key="NSNextResponder" ref="835573720"/>
 										<int key="NSvFlags">292</int>
-										<string key="NSFrame">{{83, 10}, {232, 21}}</string>
+										<string key="NSFrame">{{83, 9}, {232, 22}}</string>
 										<reference key="NSSuperview" ref="835573720"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
@@ -90,7 +90,7 @@
 									<object class="IBUILabel" id="252730737">
 										<reference key="NSNextResponder" ref="835573720"/>
 										<int key="NSvFlags">314</int>
-										<string key="NSFrame">{{83, 46}, {54, 24}}</string>
+										<string key="NSFrame">{{253, 46}, {54, 24}}</string>
 										<reference key="NSSuperview" ref="835573720"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
@@ -111,8 +111,8 @@
 									</object>
 									<object class="IBUISegmentedControl" id="1028400199">
 										<reference key="NSNextResponder" ref="835573720"/>
-										<int key="NSvFlags">265</int>
-										<string key="NSFrame">{{166, 36}, {149, 44}}</string>
+										<int key="NSvFlags">298</int>
+										<string key="NSFrame">{{83, 36}, {160, 44}}</string>
 										<reference key="NSSuperview" ref="835573720"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -162,7 +162,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
 						</object>
-						<string key="NSFrameSize">{320, 90}</string>
+						<string key="NSFrameSize">{320, 88}</string>
 						<reference key="NSSuperview" ref="264058147"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -175,7 +175,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</object>
-				<string key="NSFrameSize">{320, 90}</string>
+				<string key="NSFrameSize">{320, 88}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
@@ -355,7 +355,7 @@
 						<bytes key="NSTransformStruct">P4AAAL+AAABCpgAAwooAAA</bytes>
 					</object>
 					<string>ProductCell</string>
-					<string>{{356, 570}, {320, 90}}</string>
+					<string>{{356, 572}, {320, 88}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAwrAAAA</bytes>

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Product.h"
 
-#define kTableViewRowHeight 91
+#define kTableViewRowHeight 88
 
 @interface ProductCell : UITableViewCell {
 	IBOutlet UILabel *nameLabel;
