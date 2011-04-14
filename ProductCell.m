@@ -6,6 +6,7 @@
 //  Copyright 2011 Metzler. All rights reserved.
 //
 
+#import "pfandrechnerAppDelegate.h"
 #import "ProductCell.h"
 #import "Product.h"
 #import <AudioToolbox/AudioServices.h> 
@@ -24,6 +25,7 @@
 	reuseIdentifier:(NSString *)reuseIdentifier {
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+	
     return self;
 }
 
@@ -61,11 +63,17 @@
 -(IBAction) incCount:(id)sender {
 	[self.product incMultiplier];
 	[self updateCount:sender];
+	if (product.multiplier > 0) {
+		[self.segmentedControl setEnabled:YES forSegmentAtIndex:0];
+	}
 }
 
 -(IBAction) decCount:(id)sender {
 	[self.product decMultiplier];
 	[self updateCount:sender];
+	if (product.multiplier == 0) {
+		[self.segmentedControl setEnabled:NO forSegmentAtIndex:0];
+	}
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath 
@@ -93,14 +101,16 @@
 - (IBAction) playSound:(id) sender 
 {
 	NSLog(@"play tock");
-
+/*
 	// load player and prepare to play
 	NSError *err;
 	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"tock" ofType:@"caf" ]];
 	AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
 	[player prepareToPlay];
-
-	[player play];
+*/
+	
+	pfandrechnerAppDelegate *app = (pfandrechnerAppDelegate *) [[UIApplication sharedApplication] delegate];
+	[app.player play];
 }
 
 @end

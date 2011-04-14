@@ -18,6 +18,9 @@
 @synthesize navigationController;
 @synthesize navigationItem;
 
+@synthesize player;
+
+
 #pragma mark -
 #pragma mark Application lifecycle
 
@@ -35,6 +38,13 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
 
+	// load player and prepare to play
+	NSError *err;
+	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"tock" ofType:@"caf" ]];
+	
+	player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
+	//[player prepareToPlay];
+	
 }
 
 
@@ -88,6 +98,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 
 - (void)dealloc {
+	[player release];
 	[navigationController release];
 	[navigationItem release];	 
 	[window release];
