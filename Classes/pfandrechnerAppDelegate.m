@@ -40,11 +40,11 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 	// load player and prepare to play
 	NSError *err;
-	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"tock" ofType:@"caf" ]];
+	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff" ]];
 	
 	player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
-	//[player prepareToPlay];
-	
+	player.volume = 0.25;
+	[player prepareToPlay];
 }
 
 

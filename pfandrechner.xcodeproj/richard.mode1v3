@@ -275,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>16</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>pfandrechnerAppDelegate.h</string>
+								<string>pfandrechnerAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,24 +325,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>pfandrechnerAppDelegate.h</string>
+										<string>pfandrechnerAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>79AD88CB1357119C0083A3EB</string>
+										<string>79AD891D1357215F0083A3EB</string>
 										<key>history</key>
 										<array>
-											<string>79F3EDA7134DC970007B551D</string>
-											<string>7990B3091351A37800DBC696</string>
-											<string>792CB7E7135660EB00BBBDBA</string>
-											<string>797B4B0A1356FA9100C8D4E0</string>
-											<string>797B4B381356FEF000C8D4E0</string>
-											<string>797B4B3A1356FEF000C8D4E0</string>
-											<string>797B4B53135702FD00C8D4E0</string>
-											<string>797B4B54135702FD00C8D4E0</string>
-											<string>797B4B74135710D300C8D4E0</string>
-											<string>797B4B75135710D300C8D4E0</string>
-											<string>797B4B7A1357110C00C8D4E0</string>
+											<string>79AD8915135721260083A3EB</string>
+											<string>79AD8916135721260083A3EB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -540,6 +531,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>79AD891E1357215F0083A3EB</string>
+		<string>79AD8904135720280083A3EB</string>
+		<string>79AD8905135720280083A3EB</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>793FAB79131AC48F003E811C</string>
 		<string>/Users/richard/Code/pfandrechner/pfandrechner.xcodeproj</string>

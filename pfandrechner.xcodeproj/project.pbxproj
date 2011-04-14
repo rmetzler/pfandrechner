@@ -19,8 +19,6 @@
 		793CB6F2134922B500653AAD /* ProductCellv4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793CB6F1134922B500653AAD /* ProductCellv4.xib */; };
 		793FABA3131BEB88003E811C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FABA2131BEB88003E811C /* ProductCell.m */; };
 		793FABA6131BEBBE003E811C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793FABA5131BEBBE003E811C /* ProductCell.xib */; };
-		797B4B081356FA8000C8D4E0 /* tick.caf in Resources */ = {isa = PBXBuildFile; fileRef = 797B4B061356FA8000C8D4E0 /* tick.caf */; };
-		797B4B091356FA8000C8D4E0 /* tock.caf in Resources */ = {isa = PBXBuildFile; fileRef = 797B4B071356FA8000C8D4E0 /* tock.caf */; };
 		79819A0E134CA2520076B852 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A0D134CA2520076B852 /* libFlurry.a */; };
 		79819A99134CB7C10076B852 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A98134CB7C10076B852 /* CoreFoundation.framework */; };
 		79819B07134CBE0A0076B852 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B06134CBE0A0076B852 /* AudioToolbox.framework */; };
@@ -61,8 +59,6 @@
 		793FABA1131BEB88003E811C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ../ProductCell.h; sourceTree = "<group>"; };
 		793FABA2131BEB88003E811C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ../ProductCell.m; sourceTree = "<group>"; };
 		793FABA5131BEBBE003E811C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
-		797B4B061356FA8000C8D4E0 /* tick.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tick.caf; sourceTree = "<group>"; };
-		797B4B071356FA8000C8D4E0 /* tock.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tock.caf; sourceTree = "<group>"; };
 		79819A0C134CA2520076B852 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
 		79819A0D134CA2520076B852 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		79819A98134CB7C10076B852 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -155,7 +151,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				797B4B051356FA8000C8D4E0 /* Sounds */,
 				79C92284134A5829006B7818 /* iTunesArtwork */,
 				79C922DA134A5E2E006B7818 /* img1 */,
 				79C922E2134A5E2E006B7818 /* img2 */,
@@ -192,15 +187,6 @@
 				79F3ED9C134DC455007B551D /* QuartzCore.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		797B4B051356FA8000C8D4E0 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				797B4B061356FA8000C8D4E0 /* tick.caf */,
-				797B4B071356FA8000C8D4E0 /* tock.caf */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 		79819A07134CA2520076B852 /* FlurryLib */ = {
@@ -281,8 +267,6 @@
 				79C92334134BBFFF006B7818 /* img4 in Resources */,
 				79E757EE134FBA8F004DC536 /* ProductCellv6.xib in Resources */,
 				7990B3181352718400DBC696 /* ProductCellv7.xib in Resources */,
-				797B4B081356FA8000C8D4E0 /* tick.caf in Resources */,
-				797B4B091356FA8000C8D4E0 /* tock.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
