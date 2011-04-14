@@ -40,7 +40,9 @@
 //#define kCustomCellNib @"ProductCellv2"
 //#define kCustomCellNib @"ProductCellv3"
 //#define kCustomCellNib @"ProductCellv4"
-#define kCustomCellNib @"ProductCellv5"
+//#define kCustomCellNib @"ProductCellv5"
+//#define kCustomCellNib @"ProductCellv6"
+#define kCustomCellNib @"ProductCellv7"
 
 //#define kStyle @"img1"
 //#define kStyle @"img2" 
