@@ -9,6 +9,7 @@
 #import "ProductCell.h"
 #import "Product.h"
 #import <AudioToolbox/AudioServices.h> 
+#import <AVFoundation/AVFoundation.h>
 
 @implementation ProductCell
 @synthesize nameLabel;
@@ -88,14 +89,18 @@
 
 }
 
+// TODO move into AppDelegate
 - (IBAction) playSound:(id) sender 
 {
 	NSLog(@"play tock");
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"tock" ofType:@"caf"]; 
-	SystemSoundID soundID; 
-	AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:path], &soundID); 
-	AudioServicesPlaySystemSound(soundID); 
-	AudioServicesDisposeSystemSoundID(soundID); 	
+
+	// load player and prepare to play
+	NSError *err;
+	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"tock" ofType:@"caf" ]];
+	AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
+	[player prepareToPlay];
+
+	[player play];
 }
 
 @end
