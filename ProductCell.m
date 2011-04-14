@@ -100,15 +100,8 @@
 // TODO move into AppDelegate
 - (IBAction) playSound:(id) sender 
 {
-	NSLog(@"play tock");
-/*
-	// load player and prepare to play
-	NSError *err;
-	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"tock" ofType:@"caf" ]];
-	AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
-	[player prepareToPlay];
-*/
-	
+	// NSLog(@"play tock");
+
 	PfandrechnerAppDelegate *app = (PfandrechnerAppDelegate *) [[UIApplication sharedApplication] delegate];
 	[app.player play];
 }
