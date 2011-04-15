@@ -19,6 +19,7 @@
 		793CB6F2134922B500653AAD /* ProductCellv4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793CB6F1134922B500653AAD /* ProductCellv4.xib */; };
 		793FABA3131BEB88003E811C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FABA2131BEB88003E811C /* ProductCell.m */; };
 		793FABA6131BEBBE003E811C /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793FABA5131BEBBE003E811C /* ProductCell.xib */; };
+		794812991358C8080072D515 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 794812981358C8080072D515 /* Settings.bundle */; };
 		79819A0E134CA2520076B852 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A0D134CA2520076B852 /* libFlurry.a */; };
 		79819A99134CB7C10076B852 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A98134CB7C10076B852 /* CoreFoundation.framework */; };
 		79819B07134CBE0A0076B852 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B06134CBE0A0076B852 /* AudioToolbox.framework */; };
@@ -59,6 +60,7 @@
 		793FABA1131BEB88003E811C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ../ProductCell.h; sourceTree = "<group>"; };
 		793FABA2131BEB88003E811C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ../ProductCell.m; sourceTree = "<group>"; };
 		793FABA5131BEBBE003E811C /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		794812981358C8080072D515 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		79819A0C134CA2520076B852 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
 		79819A0D134CA2520076B852 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		79819A98134CB7C10076B852 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +137,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				794812981358C8080072D515 /* Settings.bundle */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				79C92334134BBFFF006B7818 /* img4 in Resources */,
 				79E757EE134FBA8F004DC536 /* ProductCellv6.xib in Resources */,
 				7990B3181352718400DBC696 /* ProductCellv7.xib in Resources */,
+				794812991358C8080072D515 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

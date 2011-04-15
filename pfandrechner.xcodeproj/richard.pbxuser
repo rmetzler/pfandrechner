@@ -37,10 +37,10 @@
 	};
 	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{6940, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{6991, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7041, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8712}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {939, 5493}}";
-			sepNavSelRange = "{1010, 0}";
-			sepNavVisRange = "{700, 531}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7029, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7080, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7130, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8801}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {955, 5274}}";
+			sepNavSelRange = "{4416, 0}";
+			sepNavVisRange = "{3900, 960}";
 			sepNavWindowFrame = "{{0, 4}, {1280, 774}}";
 		};
 	};
@@ -153,6 +153,14 @@
 		perUserProjectItems = {
 			79033E5D1357352400F2CE74 = 79033E5D1357352400F2CE74 /* PBXTextBookmark */;
 			79481285135735A90072D515 /* PBXTextBookmark */ = 79481285135735A90072D515 /* PBXTextBookmark */;
+			794812A31358C8560072D515 /* PBXTextBookmark */ = 794812A31358C8560072D515 /* PBXTextBookmark */;
+			794812A41358C8560072D515 /* PBXBookmark */ = 794812A41358C8560072D515 /* PBXBookmark */;
+			794812A51358C8560072D515 /* PlistBookmark */ = 794812A51358C8560072D515 /* PlistBookmark */;
+			794812BA1358CDA00072D515 /* PBXBookmark */ = 794812BA1358CDA00072D515 /* PBXBookmark */;
+			794812C01358CE2A0072D515 /* PlistBookmark */ = 794812C01358CE2A0072D515 /* PlistBookmark */;
+			794812C21358CE2A0072D515 /* PBXTextBookmark */ = 794812C21358CE2A0072D515 /* PBXTextBookmark */;
+			794812C31358CE2A0072D515 /* PBXTextBookmark */ = 794812C31358CE2A0072D515 /* PBXTextBookmark */;
+			794812C61358CE2A0072D515 /* PlistBookmark */ = 794812C61358CE2A0072D515 /* PlistBookmark */;
 			79AD8915135721260083A3EB = 79AD8915135721260083A3EB /* PBXTextBookmark */;
 			79AD89251357232B0083A3EB = 79AD89251357232B0083A3EB /* PBXTextBookmark */;
 			79AD89261357232B0083A3EB = 79AD89261357232B0083A3EB /* PBXTextBookmark */;
@@ -250,6 +258,99 @@
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 0;
+	};
+	7948129B1358C8080072D515 /* Root.plist */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
+		path = Root.plist;
+		sourceTree = "<group>";
+	};
+	794812A31358C8560072D515 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* PfandrechnerAppDelegate.h */;
+		name = "PfandrechnerAppDelegate.h: 8";
+		rLen = 1;
+		rLoc = 149;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 0;
+	};
+	794812A41358C8560072D515 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7948129B1358C8080072D515 /* Root.plist */;
+	};
+	794812A51358C8560072D515 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 794812A61358C8560072D515 /* Root.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	794812A61358C8560072D515 /* Root.plist */ = {
+		isa = PBXFileReference;
+		name = Root.plist;
+		path = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		sourceTree = "<absolute>";
+	};
+	794812BA1358CDA00072D515 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7948129B1358C8080072D515 /* Root.plist */;
+	};
+	794812C01358CE2A0072D515 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 794812C11358CE2A0072D515 /* Root.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	794812C11358CE2A0072D515 /* Root.plist */ = {
+		isa = PBXFileReference;
+		name = Root.plist;
+		path = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		sourceTree = "<absolute>";
+	};
+	794812C21358CE2A0072D515 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 45";
+		rLen = 13;
+		rLoc = 997;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 654;
+	};
+	794812C31358CE2A0072D515 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 150";
+		rLen = 0;
+		rLoc = 4416;
+		rType = 0;
+		vrLen = 960;
+		vrLoc = 3900;
+	};
+	794812C61358CE2A0072D515 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 794812C11358CE2A0072D515 /* Root.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			PreferenceSpecifiers,
+			1,
+			Titles,
+			0,
+		);
+		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		rLen = 6;
+		rLoc = 0;
 	};
 	797B4B391356FEF000C8D4E0 /* AVAudioPlayer.h */ = {
 		isa = PBXFileReference;
