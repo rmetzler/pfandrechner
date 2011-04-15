@@ -146,7 +146,8 @@
     ProductCell *cell = (ProductCell *) [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
 	if (cell == nil) {
-		NSArray *nib =[[NSBundle mainBundle] loadNibNamed:kCustomCellNib
+		NSString *nibFile = [ [NSUserDefaults standardUserDefaults] stringForKey:@"button_position"];
+		NSArray *nib =[[NSBundle mainBundle] loadNibNamed:nibFile
 													owner:self 
 												  options:nil];
 		
