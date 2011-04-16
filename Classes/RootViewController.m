@@ -41,8 +41,8 @@
 //#define kCustomCellNib @"ProductCellv3"
 //#define kCustomCellNib @"ProductCellv4"
 //#define kCustomCellNib @"ProductCellv5"
-//#define kCustomCellNib @"ProductCellv6"
-#define kCustomCellNib @"ProductCellv7"
+#define kCustomCellNib @"ProductCellv6"
+//#define kCustomCellNib @"ProductCellv7"
 
 //#define kStyle @"img1"
 //#define kStyle @"img2" 
@@ -148,6 +148,9 @@
     
 	if (cell == nil) {
 		NSString *nibFile = [ [NSUserDefaults standardUserDefaults] stringForKey:@"button_position"];
+		if (nil == nibFile) {
+			nibFile = kCustomCellNib;
+		}
 		NSArray *nib =[[NSBundle mainBundle] loadNibNamed:nibFile
 													owner:self 
 												  options:nil];
