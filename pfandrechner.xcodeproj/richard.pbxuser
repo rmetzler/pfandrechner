@@ -147,19 +147,17 @@
 					PBXSymbolsDataSource_ReferenceNameID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 324589214;
-			PBXWorkspaceStateSaveDate = 324589214;
+			PBXPerProjectTemplateStateSaveDate = 324605654;
+			PBXWorkspaceStateSaveDate = 324605654;
 		};
 		perUserProjectItems = {
-			793DA3A71358D6B40081384A /* PBXTextBookmark */ = 793DA3A71358D6B40081384A /* PBXTextBookmark */;
-			793DA3B51358D6D10081384A /* PBXTextBookmark */ = 793DA3B51358D6D10081384A /* PBXTextBookmark */;
-			794812A31358C8560072D515 = 794812A31358C8560072D515 /* PBXTextBookmark */;
-			794812C01358CE2A0072D515 = 794812C01358CE2A0072D515 /* PlistBookmark */;
-			794812C21358CE2A0072D515 = 794812C21358CE2A0072D515 /* PBXTextBookmark */;
-			794812D61358D4990072D515 = 794812D61358D4990072D515 /* PBXTextBookmark */;
-			79AD8915135721260083A3EB = 79AD8915135721260083A3EB /* PBXTextBookmark */;
-			79AD89251357232B0083A3EB = 79AD89251357232B0083A3EB /* PBXTextBookmark */;
-			79AD89261357232B0083A3EB = 79AD89261357232B0083A3EB /* PBXTextBookmark */;
+			794812A31358C8560072D515 /* PBXTextBookmark */ = 794812A31358C8560072D515 /* PBXTextBookmark */;
+			794812C01358CE2A0072D515 /* PlistBookmark */ = 794812C01358CE2A0072D515 /* PlistBookmark */;
+			794812C21358CE2A0072D515 /* PBXTextBookmark */ = 794812C21358CE2A0072D515 /* PBXTextBookmark */;
+			794812D61358D4990072D515 /* PBXTextBookmark */ = 794812D61358D4990072D515 /* PBXTextBookmark */;
+			79AD8915135721260083A3EB /* PBXTextBookmark */ = 79AD8915135721260083A3EB /* PBXTextBookmark */;
+			79AD89251357232B0083A3EB /* PBXTextBookmark */ = 79AD89251357232B0083A3EB /* PBXTextBookmark */;
+			79EF5EB31359171700E05C60 /* PlistBookmark */ = 79EF5EB31359171700E05C60 /* PlistBookmark */;
 		};
 		sourceControlManager = 793FAB82131AC48F003E811C /* Source Control */;
 		userBuildSettings = {
@@ -171,26 +169,6 @@
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 360}";
 		};
-	};
-	793DA3A71358D6B40081384A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "PfandrechnerAppDelegate.m: 30";
-		rLen = 0;
-		rLoc = 592;
-		rType = 0;
-		vrLen = 970;
-		vrLoc = 384;
-	};
-	793DA3B51358D6D10081384A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "PfandrechnerAppDelegate.m: 30";
-		rLen = 0;
-		rLoc = 592;
-		rType = 0;
-		vrLen = 902;
-		vrLoc = 384;
 	};
 	793FAB6A131AC47E003E811C /* Pfandrechner */ = {
 		isa = PBXExecutable;
@@ -351,15 +329,25 @@
 		vrLen = 752;
 		vrLoc = 0;
 	};
-	79AD89261357232B0083A3EB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "pfandrechnerAppDelegate.m: 15";
-		rLen = 22;
-		rLoc = 278;
-		rType = 0;
-		vrLen = 768;
-		vrLoc = 33;
+	79EF5EB31359171700E05C60 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 79EF5EB41359171700E05C60 /* Root.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			PreferenceSpecifiers,
+			1,
+			DefaultValue,
+		);
+		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	79EF5EB41359171700E05C60 /* Root.plist */ = {
+		isa = PBXFileReference;
+		name = Root.plist;
+		path = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		sourceTree = "<absolute>";
 	};
 	8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */ = {
 		uiCtxt = {
