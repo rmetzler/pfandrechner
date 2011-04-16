@@ -18,7 +18,7 @@
 			<key>Key</key>
 			<string>button_position</string>
 			<key>Title</key>
-			<string>Buttons</string>
+			<string>Button Position</string>
 			<key>Titles</key>
 			<array>
 				<string>mittig</string>
@@ -30,7 +30,7 @@
 				<string>ProductCellv6</string>
 			</array>
 			<key>DefaultValue</key>
-			<string>ProductCellv7</string>
+			<string>ProductCellv6</string>
 		</dict>
 	</array>
 </dict>
