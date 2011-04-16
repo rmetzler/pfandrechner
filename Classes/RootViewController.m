@@ -47,7 +47,8 @@
 //#define kStyle @"img1"
 //#define kStyle @"img2" 
 //#define kStyle @"img3" 
-#define kStyle @"img4" 
+//#define kStyle @"img4" 
+#define kStyle @"img5" 
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -75,7 +76,7 @@
 			 [[[Product alloc] initWithPrice:0.25 image: @"wasser.png"  description: @"Plastikflasche Einweg"] autorelease],
 			 [[[Product alloc] initWithPrice:0.08 image: @"bier2.png"   description: @"Bierflasche (Glas)"] autorelease],
 			 [[[Product alloc] initWithPrice:0.15 image: @"bier1.png"   description: @"Bierflasche mit Bügel (Glas)"] autorelease],
-			 [[[Product alloc] initWithPrice:0.25 image: @"dosen.png"   description: @"Dose"] autorelease],
+			 [[[Product alloc] initWithPrice:0.25 image: @"dose.png"   description: @"Dose"] autorelease],
 			 [[[Product alloc] initWithPrice:0.15 image: @"joghurt.png" description: @"Joghurt Glas"] autorelease],
 			 [[[Product alloc] initWithPrice:1.50 image: @"kasten1.png" description: @"Kasten (leer)"] autorelease],
 			 [[[Product alloc] initWithPrice:0.75 image: @"kasten2.png" description: @"Halber Kasten (leer)"] autorelease],
