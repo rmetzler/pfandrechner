@@ -9,9 +9,9 @@
 	};
 	1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2244, 1649}}";
-			sepNavSelRange = "{592, 0}";
-			sepNavVisRange = "{384, 902}";
+			sepNavIntBoundsRect = "{{0, 0}, {1100, 2081}}";
+			sepNavSelRange = "{1134, 22}";
+			sepNavVisRange = "{422, 1232}";
 			sepNavWindowFrame = "{{15, 215}, {750, 558}}";
 		};
 	};
@@ -47,7 +47,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = "Ad Hoc";
 		activeExecutable = 793FAB6A131AC47E003E811C /* Pfandrechner */;
-		activeSDKPreference = iphonesimulator4.2;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Pfandrechner */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Pfandrechner */,
@@ -147,17 +147,18 @@
 					PBXSymbolsDataSource_ReferenceNameID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 324605654;
-			PBXWorkspaceStateSaveDate = 324605654;
+			PBXPerProjectTemplateStateSaveDate = 324634683;
+			PBXWorkspaceStateSaveDate = 324634683;
 		};
 		perUserProjectItems = {
-			794812A31358C8560072D515 /* PBXTextBookmark */ = 794812A31358C8560072D515 /* PBXTextBookmark */;
-			794812C01358CE2A0072D515 /* PlistBookmark */ = 794812C01358CE2A0072D515 /* PlistBookmark */;
-			794812C21358CE2A0072D515 /* PBXTextBookmark */ = 794812C21358CE2A0072D515 /* PBXTextBookmark */;
-			794812D61358D4990072D515 /* PBXTextBookmark */ = 794812D61358D4990072D515 /* PBXTextBookmark */;
-			79AD8915135721260083A3EB /* PBXTextBookmark */ = 79AD8915135721260083A3EB /* PBXTextBookmark */;
-			79AD89251357232B0083A3EB /* PBXTextBookmark */ = 79AD89251357232B0083A3EB /* PBXTextBookmark */;
-			79EF5EB31359171700E05C60 /* PlistBookmark */ = 79EF5EB31359171700E05C60 /* PlistBookmark */;
+			794812A31358C8560072D515 = 794812A31358C8560072D515 /* PBXTextBookmark */;
+			794812C01358CE2A0072D515 = 794812C01358CE2A0072D515 /* PlistBookmark */;
+			794812C21358CE2A0072D515 = 794812C21358CE2A0072D515 /* PBXTextBookmark */;
+			794812D61358D4990072D515 = 794812D61358D4990072D515 /* PBXTextBookmark */;
+			79AD8915135721260083A3EB = 79AD8915135721260083A3EB /* PBXTextBookmark */;
+			79AD89251357232B0083A3EB = 79AD89251357232B0083A3EB /* PBXTextBookmark */;
+			79ED23891359884D001B8C8E /* PlistBookmark */ = 79ED23891359884D001B8C8E /* PlistBookmark */;
+			79EF5EB31359171700E05C60 = 79EF5EB31359171700E05C60 /* PlistBookmark */;
 		};
 		sourceControlManager = 793FAB82131AC48F003E811C /* Source Control */;
 		userBuildSettings = {
@@ -275,7 +276,7 @@
 		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
 		name = "PfandrechnerAppDelegate.m: 30";
 		rLen = 0;
-		rLoc = 592;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 688;
 		vrLoc = 0;
@@ -329,6 +330,17 @@
 		vrLen = 752;
 		vrLoc = 0;
 	};
+	79ED23891359884D001B8C8E /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 79EF5EB41359171700E05C60 /* Root.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
 	79EF5EB31359171700E05C60 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 79EF5EB41359171700E05C60 /* Root.plist */;
@@ -341,10 +353,11 @@
 		);
 		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	79EF5EB41359171700E05C60 /* Root.plist */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
 		name = Root.plist;
 		path = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
 		sourceTree = "<absolute>";
