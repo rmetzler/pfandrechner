@@ -28,9 +28,10 @@ void uncaughtExceptionHandler(NSException *exception) {
     [FlurryAPI logError:@"Uncaught" message:@"Crash!" exception:exception];
 }
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-    // Analytics
+
+- (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{    
+	// Analytics
 	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
 //	[FlurryAPI startSession:@"UGIQ3KHB88KBB5LSLHGC"];
 
@@ -38,13 +39,19 @@ void uncaughtExceptionHandler(NSException *exception) {
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
 
-	// load player and prepare to play
+
+	// mix with ipod music
 	NSError *err;
+	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&err];
+	
+	// load player and prepare to play
 	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff" ]];
 	
 	player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
 	player.volume = 0.25;
 	[player prepareToPlay];
+	
+	return YES;
 }
 
 
