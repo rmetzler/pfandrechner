@@ -38,6 +38,7 @@
 		79C92334134BBFFF006B7818 /* img4 in Resources */ = {isa = PBXBuildFile; fileRef = 79C92333134BBFFF006B7818 /* img4 */; };
 		79E6FEAE1349AEBC00E7EE98 /* ProductCellv5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E6FEAD1349AEBC00E7EE98 /* ProductCellv5.xib */; };
 		79E757EE134FBA8F004DC536 /* ProductCellv6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E757ED134FBA8F004DC536 /* ProductCellv6.xib */; };
+		79ED24101359BA19001B8C8E /* img5 in Resources */ = {isa = PBXBuildFile; fileRef = 79ED24031359BA19001B8C8E /* img5 */; };
 		79F3ED9D134DC455007B551D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F3ED9C134DC455007B551D /* QuartzCore.framework */; };
 		79F5EB211345DCDB0021341A /* ProductCellv2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F5EB201345DCDB0021341A /* ProductCellv2.xib */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		79C92333134BBFFF006B7818 /* img4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img4; sourceTree = "<group>"; };
 		79E6FEAD1349AEBC00E7EE98 /* ProductCellv5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv5.xib; sourceTree = "<group>"; };
 		79E757ED134FBA8F004DC536 /* ProductCellv6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv6.xib; sourceTree = "<group>"; };
+		79ED24031359BA19001B8C8E /* img5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img5; sourceTree = "<group>"; };
 		79F3ED9C134DC455007B551D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		79F5EB201345DCDB0021341A /* ProductCellv2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv2.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pfandrechner-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -159,8 +161,9 @@
 				79C922E2134A5E2E006B7818 /* img2 */,
 				79C9230E134B9AF5006B7818 /* img3 */,
 				79C92333134BBFFF006B7818 /* img4 */,
-				79C92283134A5829006B7818 /* icon@2x.png */,
+				79ED24031359BA19001B8C8E /* img5 */,
 				79C92282134A5829006B7818 /* icon.png */,
+				79C92283134A5829006B7818 /* icon@2x.png */,
 				79C92280134A5829006B7818 /* icon-small.png */,
 				79C9227F134A5829006B7818 /* icon-small-50.png */,
 				79C92281134A5829006B7818 /* icon-small@2x.png */,
@@ -271,6 +274,7 @@
 				79E757EE134FBA8F004DC536 /* ProductCellv6.xib in Resources */,
 				7990B3181352718400DBC696 /* ProductCellv7.xib in Resources */,
 				794812991358C8080072D515 /* Settings.bundle in Resources */,
+				79ED24101359BA19001B8C8E /* img5 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
