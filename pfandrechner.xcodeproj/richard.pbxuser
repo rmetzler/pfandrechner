@@ -2,8 +2,8 @@
 {
 	1D3623240D0F684500981E51 /* PfandrechnerAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {939, 506}}";
-			sepNavSelRange = "{149, 1}";
+			sepNavIntBoundsRect = "{{0, 0}, {939, 474}}";
+			sepNavSelRange = "{578, 0}";
 			sepNavVisRange = "{0, 713}";
 		};
 	};
@@ -37,17 +37,17 @@
 	};
 	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7054, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7105, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7155, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8826}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1221, 5045}}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{7111, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{7162, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{7212, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8883}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 5093}}";
 			sepNavSelRange = "{2256, 0}";
-			sepNavVisRange = "{1442, 1651}";
+			sepNavVisRange = "{1397, 1699}";
 			sepNavWindowFrame = "{{0, 4}, {1280, 774}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = "Ad Hoc";
 		activeExecutable = 793FAB6A131AC47E003E811C /* Pfandrechner */;
-		activeSDKPreference = iphonesimulator4.2;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Pfandrechner */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Pfandrechner */,
@@ -147,32 +147,14 @@
 					PBXSymbolsDataSource_ReferenceNameID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 324634683;
-			PBXWorkspaceStateSaveDate = 324634683;
+			PBXPerProjectTemplateStateSaveDate = 324743272;
+			PBXWorkspaceStateSaveDate = 324743272;
 		};
 		perUserProjectItems = {
-			794812A31358C8560072D515 = 794812A31358C8560072D515 /* PBXTextBookmark */;
-			794812C01358CE2A0072D515 = 794812C01358CE2A0072D515 /* PlistBookmark */;
-			794812C21358CE2A0072D515 = 794812C21358CE2A0072D515 /* PBXTextBookmark */;
-			794812D61358D4990072D515 = 794812D61358D4990072D515 /* PBXTextBookmark */;
-			79AD8915135721260083A3EB = 79AD8915135721260083A3EB /* PBXTextBookmark */;
-			79AD89251357232B0083A3EB = 79AD89251357232B0083A3EB /* PBXTextBookmark */;
-			79ED23891359884D001B8C8E /* PlistBookmark */ = 79ED23891359884D001B8C8E /* PlistBookmark */;
-			79ED23D71359B96F001B8C8E /* PBXTextBookmark */ = 79ED23D71359B96F001B8C8E /* PBXTextBookmark */;
-			79ED23DB1359B99D001B8C8E /* PBXTextBookmark */ = 79ED23DB1359B99D001B8C8E /* PBXTextBookmark */;
-			79ED23DE1359B9A2001B8C8E /* PlistBookmark */ = 79ED23DE1359B9A2001B8C8E /* PlistBookmark */;
-			79ED23DF1359B9A2001B8C8E /* PBXTextBookmark */ = 79ED23DF1359B9A2001B8C8E /* PBXTextBookmark */;
-			79ED23E11359B9A2001B8C8E /* PBXTextBookmark */ = 79ED23E11359B9A2001B8C8E /* PBXTextBookmark */;
-			79ED23E31359B9A2001B8C8E /* PBXTextBookmark */ = 79ED23E31359B9A2001B8C8E /* PBXTextBookmark */;
-			79ED23E51359B9A2001B8C8E /* PBXTextBookmark */ = 79ED23E51359B9A2001B8C8E /* PBXTextBookmark */;
-			79ED23E61359B9A2001B8C8E /* PBXTextBookmark */ = 79ED23E61359B9A2001B8C8E /* PBXTextBookmark */;
-			79ED23EA1359B9EB001B8C8E /* PBXTextBookmark */ = 79ED23EA1359B9EB001B8C8E /* PBXTextBookmark */;
-			79ED23EB1359B9F0001B8C8E /* PBXTextBookmark */ = 79ED23EB1359B9F0001B8C8E /* PBXTextBookmark */;
-			79ED24131359BA2E001B8C8E /* PBXTextBookmark */ = 79ED24131359BA2E001B8C8E /* PBXTextBookmark */;
-			79ED24141359BAA0001B8C8E /* PBXBookmark */ = 79ED24141359BAA0001B8C8E /* PBXBookmark */;
-			79ED24171359BAAC001B8C8E /* PBXTextBookmark */ = 79ED24171359BAAC001B8C8E /* PBXTextBookmark */;
-			79ED241A1359BAAC001B8C8E /* PBXTextBookmark */ = 79ED241A1359BAAC001B8C8E /* PBXTextBookmark */;
-			79EF5EB31359171700E05C60 = 79EF5EB31359171700E05C60 /* PlistBookmark */;
+			79A71319135B2B3A004EE3D3 = 79A71319135B2B3A004EE3D3 /* PBXTextBookmark */;
+			79A71320135B2BF2004EE3D3 = 79A71320135B2BF2004EE3D3 /* PBXTextBookmark */;
+			79ED23E51359B9A2001B8C8E = 79ED23E51359B9A2001B8C8E /* PBXTextBookmark */;
+			79F66EDE135B306A00B6E04B /* PBXTextBookmark */ = 79F66EDE135B306A00B6E04B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 793FAB82131AC48F003E811C /* Source Control */;
 		userBuildSettings = {
@@ -247,61 +229,6 @@
 			sepNavWindowFrame = "{{0, 4}, {640, 774}}";
 		};
 	};
-	794812A31358C8560072D515 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* PfandrechnerAppDelegate.h */;
-		name = "PfandrechnerAppDelegate.h: 8";
-		rLen = 1;
-		rLoc = 149;
-		rType = 0;
-		vrLen = 713;
-		vrLoc = 0;
-	};
-	794812C01358CE2A0072D515 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 794812C11358CE2A0072D515 /* Root.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	794812C11358CE2A0072D515 /* Root.plist */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.plist.xml;
-		name = Root.plist;
-		path = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
-		sourceTree = "<absolute>";
-	};
-	794812C21358CE2A0072D515 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
-		name = "RootViewController.m: 45";
-		rLen = 13;
-		rLoc = 997;
-		rType = 0;
-		vrLen = 762;
-		vrLoc = 654;
-	};
-	794812D61358D4990072D515 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "PfandrechnerAppDelegate.m: 30";
-		rLen = 0;
-		rLoc = 743;
-		rType = 0;
-		vrLen = 688;
-		vrLoc = 0;
-	};
-	797B4B391356FEF000C8D4E0 /* AVAudioPlayer.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = AVAudioPlayer.h;
-		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVAudioPlayer.h;
-		sourceTree = "<absolute>";
-	};
 	79819A0C134CA2520076B852 /* FlurryAPI.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1100, 1133}}";
@@ -324,112 +251,25 @@
 			sepNavWindowFrame = "{{0, 4}, {640, 774}}";
 		};
 	};
-	79AD8915135721260083A3EB /* PBXTextBookmark */ = {
+	79A71319135B2B3A004EE3D3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 797B4B391356FEF000C8D4E0 /* AVAudioPlayer.h */;
-		name = "AVAudioPlayer.h: 33";
-		rLen = 89;
-		rLoc = 955;
+		fRef = 1D3623240D0F684500981E51 /* PfandrechnerAppDelegate.h */;
+		name = "PfandrechnerAppDelegate.h: 8";
+		rLen = 1;
+		rLoc = 149;
 		rType = 0;
-		vrLen = 1432;
-		vrLoc = 347;
-	};
-	79AD89251357232B0083A3EB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 793FABA2131BEB88003E811C /* ProductCell.m */;
-		name = "ProductCell.m: 89";
-		rLen = 0;
-		rLoc = 146;
-		rType = 0;
-		vrLen = 752;
+		vrLen = 713;
 		vrLoc = 0;
 	};
-	79ED23891359884D001B8C8E /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 79EF5EB41359171700E05C60 /* Root.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
+	79A71320135B2BF2004EE3D3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* PfandrechnerAppDelegate.h */;
+		name = "PfandrechnerAppDelegate.h: 23";
 		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	79ED23D71359B96F001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
-		rLen = 3;
-		rLoc = 1109;
+		rLoc = 578;
 		rType = 0;
-	};
-	79ED23DB1359B99D001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
-		name = "RootViewController.m: 50";
-		rLen = 3;
-		rLoc = 1109;
-		rType = 0;
-		vrLen = 675;
-		vrLoc = 722;
-	};
-	79ED23DE1359B9A2001B8C8E /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 79EF5EB41359171700E05C60 /* Root.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	79ED23DF1359B9A2001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 79ED23E01359B9A2001B8C8E /* UIApplication.h */;
-		name = "UIApplication.h: 236";
-		rLen = 158;
-		rLoc = 11227;
-		rType = 0;
-		vrLen = 2353;
-		vrLoc = 10918;
-	};
-	79ED23E01359B9A2001B8C8E /* UIApplication.h */ = {
-		isa = PBXFileReference;
-		name = UIApplication.h;
-		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h;
-		sourceTree = "<absolute>";
-	};
-	79ED23E11359B9A2001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 79ED23E21359B9A2001B8C8E /* AVAudioSession.h */;
-		name = "AVAudioSession.h: 48";
-		rLen = 70;
-		rLoc = 1259;
-		rType = 0;
-		vrLen = 1088;
-		vrLoc = 910;
-	};
-	79ED23E21359B9A2001B8C8E /* AVAudioSession.h */ = {
-		isa = PBXFileReference;
-		name = AVAudioSession.h;
-		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVAudioSession.h;
-		sourceTree = "<absolute>";
-	};
-	79ED23E31359B9A2001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 79ED23E41359B9A2001B8C8E /* AudioServices.h */;
-		name = "AudioServices.h: 967";
-		rLen = 84;
-		rLoc = 56906;
-		rType = 0;
-		vrLen = 1619;
-		vrLoc = 0;
-	};
-	79ED23E41359B9A2001B8C8E /* AudioServices.h */ = {
-		isa = PBXFileReference;
-		name = AudioServices.h;
-		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h;
-		sourceTree = "<absolute>";
+		vrLen = 710;
+		vrLoc = 3;
 	};
 	79ED23E51359B9A2001B8C8E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -441,90 +281,15 @@
 		vrLen = 1120;
 		vrLoc = 457;
 	};
-	79ED23E61359B9A2001B8C8E /* PBXTextBookmark */ = {
+	79F66EDE135B306A00B6E04B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "PfandrechnerAppDelegate.m: 119";
+		fRef = 1D3623240D0F684500981E51 /* PfandrechnerAppDelegate.h */;
+		name = "PfandrechnerAppDelegate.h: 23";
 		rLen = 0;
-		rLoc = 3502;
+		rLoc = 578;
 		rType = 0;
-		vrLen = 593;
+		vrLen = 713;
 		vrLoc = 0;
-	};
-	79ED23EA1359B9EB001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
-		name = "RootViewController.m: 50";
-		rLen = 3;
-		rLoc = 1109;
-		rType = 0;
-		vrLen = 720;
-		vrLoc = 722;
-	};
-	79ED23EB1359B9F0001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "PfandrechnerAppDelegate.m: 119";
-		rLen = 0;
-		rLoc = 3502;
-		rType = 0;
-		vrLen = 704;
-		vrLoc = 0;
-	};
-	79ED24131359BA2E001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "PfandrechnerAppDelegate.m: 119";
-		rLen = 0;
-		rLoc = 3502;
-		rType = 0;
-		vrLen = 704;
-		vrLoc = 0;
-	};
-	79ED24141359BAA0001B8C8E /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
-	};
-	79ED24171359BAAC001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */;
-		name = "PfandrechnerAppDelegate.m: 5";
-		rLen = 0;
-		rLoc = 95;
-		rType = 0;
-		vrLen = 593;
-		vrLoc = 0;
-	};
-	79ED241A1359BAAC001B8C8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
-		name = "RootViewController.m: 79";
-		rLen = 0;
-		rLoc = 2256;
-		rType = 0;
-		vrLen = 1651;
-		vrLoc = 1442;
-	};
-	79EF5EB31359171700E05C60 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 79EF5EB41359171700E05C60 /* Root.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			PreferenceSpecifiers,
-			1,
-			DefaultValue,
-		);
-		name = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	79EF5EB41359171700E05C60 /* Root.plist */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.plist.xml;
-		name = Root.plist;
-		path = /Users/richard/Code/pfandrechner/Settings.bundle/Root.plist;
-		sourceTree = "<absolute>";
 	};
 	8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */ = {
 		uiCtxt = {
