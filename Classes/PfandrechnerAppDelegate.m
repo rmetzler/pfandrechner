@@ -33,7 +33,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 {    
 	// Analytics
 	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-//	[FlurryAPI startSession:@"UGIQ3KHB88KBB5LSLHGC"];
+	[FlurryAPI startSession:@"UGIQ3KHB88KBB5LSLHGC"];
 
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];

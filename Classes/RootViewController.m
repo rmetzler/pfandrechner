@@ -12,7 +12,7 @@
 #import "ProductCell.h"
 #import "Product.h"
 
-//#import "FlurryAPI.h"
+#import "FlurryAPI.h"
 
 /*
 @interface UILabel (BPExtensions)
@@ -309,17 +309,33 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 
 }
 
-- (IBAction) reset:(id)sender {
-//	NSMutableDictionary *dict = [[NSMutableDictionary dictionary] autorelease];
+- (void) logResetToFlurry {
+	
+/*
+	
+	// TODO: nur loggen, wenn irgendwas drin stand
+	 
+	NSMutableDictionary *dict = [[NSMutableDictionary dictionary] autorelease];
 	
 	for (Product *p in array) {
-//		if (p.multiplier) {
-//			[dict setObject: [NSNumber numberWithInt:p.multiplier] forKey:(id)p.description];
-//		}
+		if (p.multiplier) {
+			dict setObject: [NSNumber numberWithInt:p.multiplier] forKey:(id)p.description];
+		}
 		[p resetMultiplier];
 	}
 	
-//	[FlurryAPI logEvent:@"RESET" withParameters:dict];
+	[FlurryAPI logEvent:@"RESET" withParameters:dict];
+
+*/
+}
+
+- (IBAction) reset:(id)sender {
+
+	[self logResetToFlurry];
+	
+	for (Product *p in array) {
+		[p resetMultiplier];
+	}
 
 	[self calculate];
 	
