@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -313,12 +311,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PfandrechnerAppDelegate.h</string>
+								<string>PfandrechnerAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,15 +326,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PfandrechnerAppDelegate.h</string>
+										<string>PfandrechnerAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>79F66EE2135B30C000B6E04B</string>
+										<string>79A35E0D135B351400978A91</string>
 										<key>history</key>
 										<array>
-											<string>79ED23E51359B9A2001B8C8E</string>
-											<string>79A71320135B2BF2004EE3D3</string>
+											<string>79A35E03135B314300978A91</string>
+											<string>79A35DFD135B314000978A91</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -346,14 +346,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1000, 478}}</string>
+								<string>{{0, 0}, {1000, 472}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>478pt</string>
+							<string>472pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -366,14 +366,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 483}, {1000, 195}}</string>
+								<string>{{0, 477}, {1000, 201}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>195pt</string>
+							<string>201pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -392,9 +392,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>79F66EDF135B306A00B6E04B</string>
+				<string>79A35DEF135B30FA00978A91</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>79F66EE0135B306A00B6E04B</string>
+				<string>79A35DF0135B30FA00978A91</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -532,7 +532,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
+		<string>79A35DFA135B30FA00978A91</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>793FAB79131AC48F003E811C</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/richard/Code/pfandrechner/pfandrechner.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -613,7 +617,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>793FAB79131AC48F003E811C</string>
-				<string>79F66EE1135B306A00B6E04B</string>
+				<string>79A35DF1135B30FA00978A91</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -735,13 +739,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>79A71321135B2BF2004EE3D3</string>
+				<string>79A35DF2135B30FA00978A91</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>79A71322135B2BF2004EE3D3</string>
-				<string>79A71323135B2BF2004EE3D3</string>
-				<string>79A71324135B2BF2004EE3D3</string>
-				<string>79A71325135B2BF2004EE3D3</string>
-				<string>79A71326135B2BF2004EE3D3</string>
+				<string>79A35DF3135B30FA00978A91</string>
+				<string>79A35DF4135B30FA00978A91</string>
+				<string>79A35DF5135B30FA00978A91</string>
+				<string>79A35DF6135B30FA00978A91</string>
+				<string>79A35DF7135B30FA00978A91</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -768,12 +772,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RootViewController.m</string>
+										<string>PfandrechnerAppDelegate.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -794,8 +800,6 @@
 							<string>431pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -831,8 +835,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>79ED23DC1359B99D001B8C8E</string>
-				<string>79ED23DD1359B99D001B8C8E</string>
+				<string>79A35DFF135B314000978A91</string>
+				<string>79A35E00135B314000978A91</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -897,7 +901,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>79ED24451359C4AF001B8C8E</string>
+				<string>79A35DF8135B30FA00978A91</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
