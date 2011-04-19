@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Root</key>
+	<dict>
+		<key>get-task-allow</key>
+		<false/>
+		<key>keychain-access-group</key>
+		<array>
+			<string>XAPJWQ74J7.me.klikk.pfandrechner</string>
+		</array>
+	</dict>
+</dict>
+</plist>

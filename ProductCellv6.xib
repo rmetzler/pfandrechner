@@ -134,7 +134,7 @@
 										<object class="NSMutableArray" key="IBSegmentEnabledStates">
 											<bool key="EncodedWithXMLCoder">YES</bool>
 											<boolean value="YES"/>
-											<boolean value="NO"/>
+											<boolean value="YES"/>
 											<boolean value="YES"/>
 										</object>
 										<object class="NSMutableArray" key="IBSegmentContentOffsets">

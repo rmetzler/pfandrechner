@@ -12,7 +12,7 @@
 #import "ProductCell.h"
 #import "Product.h"
 
-//#import "FlurryAPI.h"
+#import "FlurryAPI.h"
 
 /*
 @interface UILabel (BPExtensions)
@@ -41,13 +41,14 @@
 //#define kCustomCellNib @"ProductCellv3"
 //#define kCustomCellNib @"ProductCellv4"
 //#define kCustomCellNib @"ProductCellv5"
-//#define kCustomCellNib @"ProductCellv6"
-#define kCustomCellNib @"ProductCellv7"
+#define kCustomCellNib @"ProductCellv6"
+//#define kCustomCellNib @"ProductCellv7"
 
 //#define kStyle @"img1"
 //#define kStyle @"img2" 
 //#define kStyle @"img3" 
-#define kStyle @"img4" 
+//#define kStyle @"img4" 
+#define kStyle @"img5" 
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -75,7 +76,7 @@
 			 [[[Product alloc] initWithPrice:0.25 image: @"wasser.png"  description: @"Plastikflasche Einweg"] autorelease],
 			 [[[Product alloc] initWithPrice:0.08 image: @"bier2.png"   description: @"Bierflasche (Glas)"] autorelease],
 			 [[[Product alloc] initWithPrice:0.15 image: @"bier1.png"   description: @"Bierflasche mit Bügel (Glas)"] autorelease],
-			 [[[Product alloc] initWithPrice:0.25 image: @"dosen.png"   description: @"Dose"] autorelease],
+			 [[[Product alloc] initWithPrice:0.25 image: @"dose.png"   description: @"Dose"] autorelease],
 			 [[[Product alloc] initWithPrice:0.15 image: @"joghurt.png" description: @"Joghurt Glas"] autorelease],
 			 [[[Product alloc] initWithPrice:1.50 image: @"kasten1.png" description: @"Kasten (leer)"] autorelease],
 			 [[[Product alloc] initWithPrice:0.75 image: @"kasten2.png" description: @"Halber Kasten (leer)"] autorelease],
@@ -146,7 +147,11 @@
     ProductCell *cell = (ProductCell *) [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
 	if (cell == nil) {
-		NSArray *nib =[[NSBundle mainBundle] loadNibNamed:kCustomCellNib
+		NSString *nibFile = [ [NSUserDefaults standardUserDefaults] stringForKey:@"button_position"];
+		if (nil == nibFile) {
+			nibFile = kCustomCellNib;
+		}
+		NSArray *nib =[[NSBundle mainBundle] loadNibNamed:nibFile
 													owner:self 
 												  options:nil];
 		
@@ -304,17 +309,33 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 
 }
 
-- (IBAction) reset:(id)sender {
-//	NSMutableDictionary *dict = [[NSMutableDictionary dictionary] autorelease];
+- (void) logResetToFlurry {
+	
+/*
+	
+	// TODO: nur loggen, wenn irgendwas drin stand
+	 
+	NSMutableDictionary *dict = [[NSMutableDictionary dictionary] autorelease];
 	
 	for (Product *p in array) {
-//		if (p.multiplier) {
-//			[dict setObject: [NSNumber numberWithInt:p.multiplier] forKey:(id)p.description];
-//		}
+		if (p.multiplier) {
+			dict setObject: [NSNumber numberWithInt:p.multiplier] forKey:(id)p.description];
+		}
 		[p resetMultiplier];
 	}
 	
-//	[FlurryAPI logEvent:@"RESET" withParameters:dict];
+	[FlurryAPI logEvent:@"RESET" withParameters:dict];
+
+*/
+}
+
+- (IBAction) reset:(id)sender {
+
+	[self logResetToFlurry];
+	
+	for (Product *p in array) {
+		[p resetMultiplier];
+	}
 
 	[self calculate];
 	
