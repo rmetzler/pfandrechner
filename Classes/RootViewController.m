@@ -64,10 +64,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-    self.urlAlert = [[RMURLAlert alloc] initWithURLString:@"http://google.com"];
+    self.urlAlert = [[RMRecurringURLAlert alloc] initWithURLString:@"http://itunes.apple.com/de/app/pfandrechner/id433252145?mt=8" period:3];
     [self.urlAlert
-     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungsvorschläge?\nBitte bewerten Sie  die Pfandrechner App jetzt!"
-     deferText:@"Später!"
+     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungs- vorschläge für den Pfandrechner?\nBitte bewerten Sie jetzt unsere Pfandrechner App im AppStore!"
+     deferText:@"Später"
      actionText:@"Bewerten"];
     
 	UIBarButtonItem *resetButton = [[UIBarButtonItem alloc] 

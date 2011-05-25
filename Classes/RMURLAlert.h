@@ -10,6 +10,10 @@
 
 #import <Foundation/Foundation.h>
 
+#define kRMURLAlert_Times_Started @"RMURLAlert_Defer_Count"
+#define kRMURLAlert_Defer_Count @"RMURLAlert_Defer_Count"
+#define kRMURLAlert_Action_Count @"RMURLAlert_Action_Count"
+
 
 @interface RMURLAlert : NSObject<UIAlertViewDelegate> {
     NSURL* _url;
@@ -27,4 +31,22 @@
 @end
 
 
+
+@interface RMURLAlertIfNeverDoneYet : RMURLAlert {
+    
+}
+@end
+
+
+
+@interface RMRecurringURLAlert : RMURLAlertIfNeverDoneYet {
+    NSInteger _period;
+}
+
+@property (nonatomic, assign) NSInteger period;
+
+- (id) initWithURL: (NSURL*) url period:(NSInteger) period;
+- (id) initWithURLString:(NSString *) urlString period:(NSInteger) period;
+
+@end
 

@@ -11,7 +11,7 @@
 
 @interface RootViewController : UITableViewController {
 	NSArray *array;
-    RMURLAlert* urlAlert;
+    RMRecurringURLAlert* urlAlert;
 }
 
 @property (nonatomic,retain) RMURLAlert* urlAlert;
