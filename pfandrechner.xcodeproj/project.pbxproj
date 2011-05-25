@@ -34,6 +34,7 @@
 		79E757EE134FBA8F004DC536 /* ProductCellv6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E757ED134FBA8F004DC536 /* ProductCellv6.xib */; };
 		79ED24101359BA19001B8C8E /* img5 in Resources */ = {isa = PBXBuildFile; fileRef = 79ED24031359BA19001B8C8E /* img5 */; };
 		79F3ED9D134DC455007B551D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F3ED9C134DC455007B551D /* QuartzCore.framework */; };
+		79FB7F67138D1F06003F8949 /* RMURLAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB7F66138D1F06003F8949 /* RMURLAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		79E757ED134FBA8F004DC536 /* ProductCellv6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv6.xib; sourceTree = "<group>"; };
 		79ED24031359BA19001B8C8E /* img5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img5; sourceTree = "<group>"; };
 		79F3ED9C134DC455007B551D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		79FB7F65138D1F06003F8949 /* RMURLAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMURLAlert.h; sourceTree = "<group>"; };
+		79FB7F66138D1F06003F8949 /* RMURLAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMURLAlert.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pfandrechner-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +107,8 @@
 				1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */,
 				799D47D31328E0430047C14B /* Product.h */,
 				799D47D41328E0430047C14B /* Product.m */,
+				79FB7F65138D1F06003F8949 /* RMURLAlert.h */,
+				79FB7F66138D1F06003F8949 /* RMURLAlert.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				793FABA3131BEB88003E811C /* ProductCell.m in Sources */,
 				799D47D51328E0430047C14B /* Product.m in Sources */,
+				79FB7F67138D1F06003F8949 /* RMURLAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,8 @@
 #import "ProductCell.h"
 #import "Product.h"
 
+#import "RMURLAlert.h"
+
 #import "FlurryAPI.h"
 
 /*
@@ -33,6 +35,8 @@
 */
 
 @implementation RootViewController
+
+@synthesize urlAlert;
 
 #pragma mark consts
 
@@ -60,6 +64,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+    self.urlAlert = [[RMURLAlert alloc] initWithURLString:@"http://google.com"];
+    [self.urlAlert
+     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungsvorschläge?\nBitte bewerten Sie  die Pfandrechner App jetzt!"
+     deferText:@"Später!"
+     actionText:@"Bewerten"];
+    
 	UIBarButtonItem *resetButton = [[UIBarButtonItem alloc] 
 									initWithTitle:@"Reset"
 									style:UIBarButtonItemStyleBordered 
@@ -276,7 +286,8 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 
 - (void)dealloc {
 	[array release];
-	
+	[urlAlert release];
+    
     [super dealloc];
 }
 

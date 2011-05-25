@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RMURLAlert.h"
 
 @interface RootViewController : UITableViewController {
 	NSArray *array;
+    RMURLAlert* urlAlert;
 }
+
+@property (nonatomic,retain) RMURLAlert* urlAlert;
 
 - (IBAction) reset:(id)sender;
 
