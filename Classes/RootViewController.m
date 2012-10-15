@@ -268,7 +268,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 
 - (void)didReceiveMemoryWarning {
 	
-	NSLog(@"%@", __FUNCTION__);
+	NSLog(@"%s", __FUNCTION__);
 	
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -277,7 +277,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 }
 
 - (void)viewDidUnload {
-	NSLog(@"%@", __FUNCTION__);
+	NSLog(@"%s", __FUNCTION__);
 	
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;

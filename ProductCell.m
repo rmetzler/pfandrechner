@@ -90,6 +90,14 @@
 	if (0 == control.selectedSegmentIndex ) {
 		[self playSound:sender];
 		[self decCount:sender];
+	} else if (1 == control.selectedSegmentIndex ) {
+		// TODO: manage keyboard input
+		// see http://developer.apple.com/library/ios/#documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html		
+		// display numbers keyboard
+		// scroll list to display current element
+		
+		// update tiltle of segment http://stackoverflow.com/questions/8176749/editable-text-inside-uisegmentedcontroller
+		
 	} else {
 		[self playSound:sender];
 		[self incCount:sender];
