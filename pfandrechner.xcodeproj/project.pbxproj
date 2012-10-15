@@ -294,7 +294,6 @@
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = Pfandrechner;
@@ -315,7 +314,6 @@
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = Pfandrechner;
@@ -352,7 +350,6 @@
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
 					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = Pfandrechner;
