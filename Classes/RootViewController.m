@@ -14,7 +14,7 @@
 
 #import "RMURLAlert.h"
 
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 /*
 @interface UILabel (BPExtensions)
@@ -335,7 +335,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 		[p resetMultiplier];
 	}
 	
-	[FlurryAPI logEvent:@"RESET" withParameters:dict];
+	[FlurryAnalytics logEvent:@"RESET" withParameters:dict];
 
 */
 }

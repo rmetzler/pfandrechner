@@ -10,7 +10,7 @@
 #import "RootViewController.h"
 
 // Flurry Analytics
-#import "FlurryAPI.h"
+#import "FlurryAnalytics.h"
 
 @implementation PfandrechnerAppDelegate
 
@@ -25,7 +25,7 @@
 #pragma mark Application lifecycle
 
 void uncaughtExceptionHandler(NSException *exception) {
-    [FlurryAPI logError:@"Uncaught" message:@"Crash!" exception:exception];
+    [FlurryAnalytics logError:@"Uncaught" message:@"Crash!" exception:exception];
 }
 
 
@@ -33,7 +33,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 {    
 	// Analytics
 	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-	[FlurryAPI startSession:@"UGIQ3KHB88KBB5LSLHGC"];
+	[FlurryAnalytics startSession:@"UGIQ3KHB88KBB5LSLHGC"];
 
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
