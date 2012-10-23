@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,8 +18,9 @@
 		792A8F24135E1A8A0005BF13 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 792A8F23135E1A8A0005BF13 /* icon-72.png */; };
 		793FABA3131BEB88003E811C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FABA2131BEB88003E811C /* ProductCell.m */; };
 		794812991358C8080072D515 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 794812981358C8080072D515 /* Settings.bundle */; };
+		794A648B162C5EF200430217 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 794A648A162C5EF200430217 /* Default-568h@2x.png */; };
+		794A6491162C784E00430217 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 794A6490162C784E00430217 /* libFlurryAnalytics.a */; };
 		7977582E135DC8D100E539E5 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7977582D135DC8D100E539E5 /* Entitlements.plist */; };
-		79819A0E134CA2520076B852 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A0D134CA2520076B852 /* libFlurry.a */; };
 		79819A99134CB7C10076B852 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A98134CB7C10076B852 /* CoreFoundation.framework */; };
 		79819B07134CBE0A0076B852 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B06134CBE0A0076B852 /* AudioToolbox.framework */; };
 		79819B3D134CC2AD0076B852 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B3C134CC2AD0076B852 /* AVFoundation.framework */; };
@@ -34,6 +35,7 @@
 		79E757EE134FBA8F004DC536 /* ProductCellv6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E757ED134FBA8F004DC536 /* ProductCellv6.xib */; };
 		79ED24101359BA19001B8C8E /* img5 in Resources */ = {isa = PBXBuildFile; fileRef = 79ED24031359BA19001B8C8E /* img5 */; };
 		79F3ED9D134DC455007B551D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F3ED9C134DC455007B551D /* QuartzCore.framework */; };
+		79FB7F67138D1F06003F8949 /* RMURLAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB7F66138D1F06003F8949 /* RMURLAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +55,10 @@
 		793FABA1131BEB88003E811C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ../ProductCell.h; sourceTree = "<group>"; };
 		793FABA2131BEB88003E811C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ../ProductCell.m; sourceTree = "<group>"; };
 		794812981358C8080072D515 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		794A648A162C5EF200430217 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		794A648F162C784E00430217 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
+		794A6490162C784E00430217 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 		7977582D135DC8D100E539E5 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		79819A0C134CA2520076B852 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
-		79819A0D134CA2520076B852 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		79819A98134CB7C10076B852 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		79819B06134CBE0A0076B852 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		79819B3C134CC2AD0076B852 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +74,8 @@
 		79E757ED134FBA8F004DC536 /* ProductCellv6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv6.xib; sourceTree = "<group>"; };
 		79ED24031359BA19001B8C8E /* img5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img5; sourceTree = "<group>"; };
 		79F3ED9C134DC455007B551D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		79FB7F65138D1F06003F8949 /* RMURLAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMURLAlert.h; sourceTree = "<group>"; };
+		79FB7F66138D1F06003F8949 /* RMURLAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMURLAlert.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pfandrechner-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,11 +87,11 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
-				79819A0E134CA2520076B852 /* libFlurry.a in Frameworks */,
 				79819A99134CB7C10076B852 /* CoreFoundation.framework in Frameworks */,
 				79819B07134CBE0A0076B852 /* AudioToolbox.framework in Frameworks */,
 				79819B3D134CC2AD0076B852 /* AVFoundation.framework in Frameworks */,
 				79F3ED9D134DC455007B551D /* QuartzCore.framework in Frameworks */,
+				794A6491162C784E00430217 /* libFlurryAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,8 @@
 				1D3623250D0F684500981E51 /* PfandrechnerAppDelegate.m */,
 				799D47D31328E0430047C14B /* Product.h */,
 				799D47D41328E0430047C14B /* Product.m */,
+				79FB7F65138D1F06003F8949 /* RMURLAlert.h */,
+				79FB7F66138D1F06003F8949 /* RMURLAlert.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -119,7 +126,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				79819A07134CA2520076B852 /* FlurryLib */,
+				794A648E162C784E00430217 /* FlurryAnalytics */,
+				794A648A162C5EF200430217 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -174,13 +182,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		79819A07134CA2520076B852 /* FlurryLib */ = {
+		794A648E162C784E00430217 /* FlurryAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				79819A0C134CA2520076B852 /* FlurryAPI.h */,
-				79819A0D134CA2520076B852 /* libFlurry.a */,
+				794A648F162C784E00430217 /* FlurryAnalytics.h */,
+				794A6490162C784E00430217 /* libFlurryAnalytics.a */,
 			);
-			path = FlurryLib;
+			path = FlurryAnalytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +216,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Pfandrechner" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -247,6 +258,7 @@
 				79ED24101359BA19001B8C8E /* img5 in Resources */,
 				7977582E135DC8D100E539E5 /* Entitlements.plist in Resources */,
 				792A8F24135E1A8A0005BF13 /* icon-72.png in Resources */,
+				794A648B162C5EF200430217 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +274,7 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				793FABA3131BEB88003E811C /* ProductCell.m in Sources */,
 				799D47D51328E0430047C14B /* Product.m in Sources */,
+				79FB7F67138D1F06003F8949 /* RMURLAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +294,11 @@
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = Pfandrechner;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,11 +314,10 @@
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = Pfandrechner;
-				PROVISIONING_PROFILE = "D150B258-2245-400D-B4EB-E12A872F7832";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D150B258-2245-400D-B4EB-E12A872F7832";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -313,13 +326,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Richard Metzler";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
+				PROVISIONING_PROFILE = "D8448D77-BDC6-4776-931A-BB02F3F18805";
 				SDKROOT = iphoneos;
 			};
 			name = "Ad Hoc";
@@ -336,10 +350,11 @@
 				INFOPLIST_FILE = "Pfandrechner-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/FlurryLib\"",
+					"\"$(SRCROOT)/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = Pfandrechner;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad Hoc";
@@ -348,12 +363,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Metzler (2ET4EDCM6E)";
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PREBINDING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "04EE0BAF-B68A-4B04-AA95-7AD527360CE8";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -362,13 +378,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Richard Metzler";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
+				PROVISIONING_PROFILE = "2FB2FBAB-42FE-4DDD-848E-B9EA21A04F3E";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

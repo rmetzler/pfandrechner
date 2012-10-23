@@ -12,7 +12,9 @@
 #import "ProductCell.h"
 #import "Product.h"
 
-#import "FlurryAPI.h"
+#import "RMURLAlert.h"
+
+#import "FlurryAnalytics.h"
 
 /*
 @interface UILabel (BPExtensions)
@@ -33,6 +35,8 @@
 */
 
 @implementation RootViewController
+
+@synthesize urlAlert;
 
 #pragma mark consts
 
@@ -60,6 +64,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+    self.urlAlert = [[RMRecurringURLAlert alloc] initWithURLString:@"http://itunes.apple.com/de/app/pfandrechner/id433252145?mt=8" period:3];
+    [self.urlAlert
+     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungs- vorschläge für den Pfandrechner?\nBitte bewerten Sie jetzt unsere Pfandrechner App im AppStore!"
+     deferText:@"Später"
+     actionText:@"Bewerten"];
+    
 	UIBarButtonItem *resetButton = [[UIBarButtonItem alloc] 
 									initWithTitle:@"Reset"
 									style:UIBarButtonItemStyleBordered 
@@ -258,7 +268,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 
 - (void)didReceiveMemoryWarning {
 	
-	NSLog(@"%@", __FUNCTION__);
+	NSLog(@"%s", __FUNCTION__);
 	
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -267,7 +277,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 }
 
 - (void)viewDidUnload {
-	NSLog(@"%@", __FUNCTION__);
+	NSLog(@"%s", __FUNCTION__);
 	
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
@@ -276,7 +286,8 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 
 - (void)dealloc {
 	[array release];
-	
+	[urlAlert release];
+    
     [super dealloc];
 }
 
@@ -324,7 +335,7 @@ moveRowAtIndexPath:(NSIndexPath *)fromIndexPath
 		[p resetMultiplier];
 	}
 	
-	[FlurryAPI logEvent:@"RESET" withParameters:dict];
+	[FlurryAnalytics logEvent:@"RESET" withParameters:dict];
 
 */
 }
