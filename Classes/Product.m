@@ -42,22 +42,32 @@
 -(void) resetMultiplier {
 	self.multiplier = 0;
 	
-	self.product = [NSNumber numberWithDouble:multiplier*multiplicant];
+    [self updateProduct];
 }
+
+-(void) setMultiplierToInt:(int)_multiplier {
+    self.multiplier = _multiplier;
+}
+
 
 -(void) incMultiplier {
 	if (multiplier < 999) {
 		multiplier += 1;
 	}
 	
-	self.product = [NSNumber numberWithDouble:multiplier*multiplicant];
+    [self updateProduct];
 }
 
 -(void) decMultiplier {
 	if (multiplier > 0) {
 		multiplier -= 1;
 	}
-	
+    
+    [self updateProduct];
+
+}
+
+-(void) updateProduct {
 	self.product = [NSNumber numberWithDouble:multiplier*multiplicant];
 }
 

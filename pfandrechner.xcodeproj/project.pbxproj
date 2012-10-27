@@ -16,7 +16,9 @@
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
 		792A8F24135E1A8A0005BF13 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 792A8F23135E1A8A0005BF13 /* icon-72.png */; };
+		7936C142163C397000E70135 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7936C141163C397000E70135 /* Default@2x.png */; };
 		793FABA3131BEB88003E811C /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793FABA2131BEB88003E811C /* ProductCell.m */; };
+		79456DA7163CA6AD00453893 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79456DA6163CA6AD00453893 /* Default.png */; };
 		794812991358C8080072D515 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 794812981358C8080072D515 /* Settings.bundle */; };
 		794A648B162C5EF200430217 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 794A648A162C5EF200430217 /* Default-568h@2x.png */; };
 		794A6491162C784E00430217 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 794A6490162C784E00430217 /* libFlurryAnalytics.a */; };
@@ -52,8 +54,10 @@
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		792A8F23135E1A8A0005BF13 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		7936C141163C397000E70135 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		793FABA1131BEB88003E811C /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ../ProductCell.h; sourceTree = "<group>"; };
 		793FABA2131BEB88003E811C /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ../ProductCell.m; sourceTree = "<group>"; };
+		79456DA6163CA6AD00453893 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		794812981358C8080072D515 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		794A648A162C5EF200430217 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		794A648F162C784E00430217 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
@@ -127,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				794A648E162C784E00430217 /* FlurryAnalytics */,
-				794A648A162C5EF200430217 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -150,6 +153,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				79456DA6163CA6AD00453893 /* Default.png */,
+				794A648A162C5EF200430217 /* Default-568h@2x.png */,
+				7936C141163C397000E70135 /* Default@2x.png */,
 				79C92284134A5829006B7818 /* iTunesArtwork */,
 				79ED24031359BA19001B8C8E /* img5 */,
 				79C92282134A5829006B7818 /* icon.png */,
@@ -259,6 +265,8 @@
 				7977582E135DC8D100E539E5 /* Entitlements.plist in Resources */,
 				792A8F24135E1A8A0005BF13 /* icon-72.png in Resources */,
 				794A648B162C5EF200430217 /* Default-568h@2x.png in Resources */,
+				7936C142163C397000E70135 /* Default@2x.png in Resources */,
+				79456DA7163CA6AD00453893 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

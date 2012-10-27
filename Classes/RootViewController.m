@@ -187,10 +187,10 @@
 	cell.product = product;
 	
 	cell.imageView.image = [UIImage imageNamed: 
-							[NSString stringWithFormat:@"%@/%@", kStyle,	product.image]];
+							[NSString stringWithFormat:@"%@/%@", kStyle, product.image]];
 	
 	cell.nameLabel.text = product.description;
-	cell.priceLabel.text = [NSString stringWithFormat:@"%1.2f€",product.multiplicant];
+	cell.priceLabel.text = [NSString stringWithFormat:@"%1.2f€", product.multiplicant];
 	
 	
 	[cell updateCount:nil];

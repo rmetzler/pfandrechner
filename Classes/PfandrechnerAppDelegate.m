@@ -35,6 +35,9 @@ void uncaughtExceptionHandler(NSException *exception) {
 	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
 	[FlurryAnalytics startSession:@"UGIQ3KHB88KBB5LSLHGC"];
 
+    // Display StatusBar
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];

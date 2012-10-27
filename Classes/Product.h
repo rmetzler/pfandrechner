@@ -32,6 +32,7 @@
 
 
 -(void) resetMultiplier;
+-(void) setMultiplierToInt:(int)multiplier;
 -(void) incMultiplier;
 -(void) decMultiplier;
 
