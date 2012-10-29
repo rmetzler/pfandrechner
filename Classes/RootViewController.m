@@ -66,7 +66,7 @@
 	
     self.urlAlert = [[RMRecurringURLAlert alloc] initWithURLString:@"http://itunes.apple.com/de/app/pfandrechner/id433252145?mt=8" period:3];
     [self.urlAlert
-     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungs- vorschläge für den Pfandrechner?\nBitte bewerten Sie jetzt unsere Pfandrechner App im AppStore!"
+     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungs- vorschläge für den Pfandrechner?\nJetzt im AppStore bewerten!"
      deferText:@"Später"
      actionText:@"Bewerten"];
     
@@ -88,8 +88,16 @@
 			 [[[Product alloc] initWithPrice:0.15 image: @"bier1.png"   description: @"Bierflasche mit Bügel (Glas)"] autorelease],
 			 [[[Product alloc] initWithPrice:0.25 image: @"dose.png"   description: @"Dose"] autorelease],
 			 [[[Product alloc] initWithPrice:0.15 image: @"joghurt.png" description: @"Joghurt Glas"] autorelease],
-			 [[[Product alloc] initWithPrice:1.50 image: @"kasten1.png" description: @"Kasten (leer)"] autorelease],
-			 [[[Product alloc] initWithPrice:0.75 image: @"kasten2.png" description: @"Halber Kasten (leer)"] autorelease],
+			 [[[Product alloc] initWithPrice:2.40 image: @"6er-saftkasten-voll.png" description: @"6er Saftkasten voll"] autorelease],
+			 [[[Product alloc] initWithPrice:3.30 image: @"12er-saftkasten-voll.png" description: @"12er Saftkasten voll"] autorelease],
+			 [[[Product alloc] initWithPrice:3.00 image: @"6er-wasserkasten-voll.png" description: @"6er Wasserkasten voll"] autorelease],
+			 [[[Product alloc] initWithPrice:3.42 image: @"24er-kasten-voll.png" description: @"24er Bierkasten voll"] autorelease],
+			 [[[Product alloc] initWithPrice:3.10 image: @"20er-kasten-voll.png" description: @"20er Bierkasten voll"] autorelease],
+			 [[[Product alloc] initWithPrice:4.50 image: @"20er-buegel-kasten-voll.png" description: @"20er Bügelflaschen voll"] autorelease],
+			 [[[Product alloc] initWithPrice:2.30 image: @"10er-kasten-voll.png" description: @"10er Bierkasten voll"] autorelease],
+			 [[[Product alloc] initWithPrice:2.38 image: @"11er-kasten-voll.png" description: @"11er Bierkasten voll"] autorelease],
+			 [[[Product alloc] initWithPrice:1.50 image: @"kasten1.png" description: @"Kasten leer"] autorelease],
+			 [[[Product alloc] initWithPrice:0.75 image: @"kasten2.png" description: @"Halber Kasten leer"] autorelease],
 			 nil];
 
 	for (Product *p in array) {
