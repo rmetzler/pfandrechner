@@ -9,10 +9,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #define kRMURLAlert_Times_Started @"RMURLAlert_Defer_Count"
-#define kRMURLAlert_Defer_Count @"RMURLAlert_Defer_Count"
-#define kRMURLAlert_Action_Count @"RMURLAlert_Action_Count"
+#define kRMURLAlert_Defer_Count   @"RMURLAlert_Defer_Count"
+#define kRMURLAlert_Action_Count  @"RMURLAlert_Action_Count"
 
 
 @interface RMURLAlert : NSObject<UIAlertViewDelegate> {

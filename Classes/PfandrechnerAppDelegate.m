@@ -9,12 +9,13 @@
 #import "PfandrechnerAppDelegate.h"
 #import "RootViewController.h"
 
-// Flurry Analytics
-#import "FlurryAnalytics.h"
+//// Flurry Analytics
+//#import "FlurryAnalytics.h"
 
 @implementation PfandrechnerAppDelegate
 
 @synthesize window;
+@synthesize viewController;
 @synthesize navigationController;
 @synthesize navigationItem;
 
@@ -25,15 +26,44 @@
 #pragma mark Application lifecycle
 
 void uncaughtExceptionHandler(NSException *exception) {
-    [FlurryAnalytics logError:@"Uncaught" message:@"Crash!" exception:exception];
+//    [FlurryAnalytics logError:@"Uncaught" message:@"Crash!" exception:exception];
 }
 
 
-- (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
-	// Analytics
-	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-	[FlurryAnalytics startSession:@"UGIQ3KHB88KBB5LSLHGC"];
+//- (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//	// Analytics
+////	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+////	[FlurryAnalytics startSession:@"UGIQ3KHB88KBB5LSLHGC"];
+//
+//    // Display StatusBar
+//    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+//    
+//    // Add the navigation controller's view to the window and display.
+//    [self.window addSubview:navigationController.view];
+//    [self.window makeKeyAndVisible];
+//
+//	// mix with ipod music
+//	NSError *err;
+//	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&err];
+//	
+//	// load player and prepare to play
+//	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff" ]];
+//	
+//	player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
+//	player.volume = 0.25;
+//	[player prepareToPlay];
+//	
+//	return YES;
+//}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.viewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
 
     // Display StatusBar
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
@@ -41,23 +71,20 @@ void uncaughtExceptionHandler(NSException *exception) {
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
-
-
+    
 	// mix with ipod music
 	NSError *err;
 	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&err];
 	
 	// load player and prepare to play
-	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff" ]];
-	
-	player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
-	player.volume = 0.25;
-	[player prepareToPlay];
+//	NSURL *soundURL = [NSURL fileURLWithPath: [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff" ]];
+//	
+//	player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&err];
+//	player.volume = 0.25;
+//	[player prepareToPlay];
 	
 	return YES;
 }
-
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*

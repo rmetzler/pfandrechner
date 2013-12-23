@@ -14,7 +14,7 @@
 
 #import "RMURLAlert.h"
 
-#import "FlurryAnalytics.h"
+//#import "FlurryAnalytics.h"
 
 /*
 @interface UILabel (BPExtensions)
@@ -63,22 +63,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
-    self.urlAlert = [[RMRecurringURLAlert alloc] initWithURLString:@"http://itunes.apple.com/de/app/pfandrechner/id433252145?mt=8" period:3];
-    [self.urlAlert
-     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungs- vorschläge für den Pfandrechner?\nJetzt im AppStore bewerten!"
-     deferText:@"Später"
-     actionText:@"Bewerten"];
-    
-	UIBarButtonItem *resetButton = [[UIBarButtonItem alloc] 
-									initWithTitle:@"Reset"
-									style:UIBarButtonItemStyleBordered 
-									target:self action:@selector(reset:)];
-	
-	self.navigationItem.leftBarButtonItem = resetButton;
-	
-	[resetButton release];
-	
+    NSLog(@"1");
 	
 	array = [[NSArray alloc] initWithObjects:
 			 [[[Product alloc] initWithPrice:0.15 image: @"limo.png"    description: @"Glasflasche Mehrweg"] autorelease],
@@ -109,6 +94,15 @@
 	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
+    UIBarButtonItem *resetButton = [[UIBarButtonItem alloc]
+									initWithTitle:@"Reset"
+									style:UIBarButtonItemStyleBordered
+									target:self action:@selector(reset:)];
+	
+	self.navigationItem.leftBarButtonItem = resetButton;
+	
+	[resetButton release];
+
 }
 
 
@@ -117,11 +111,16 @@
     [super viewWillAppear:animated];
 }
 */
-/*
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    NSLog(@"1");
+    self.urlAlert = [[RMRecurringURLAlert alloc] initWithURLString:@"http://itunes.apple.com/de/app/pfandrechner/id433252145?mt=8" period:3];
+    [self.urlAlert
+     showAlertWithMessage:@"Sind Sie zufrieden?\nHaben Sie Verbesserungs- vorschläge für den Pfandrechner?\nJetzt im AppStore bewerten!"
+     deferText:@"Später"
+     actionText:@"Bewerten"];
 }
-*/
+
 /*
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
