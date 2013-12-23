@@ -175,13 +175,13 @@
 		
         cell = [nib objectAtIndex:0];
 		
-		CAGradientLayer *gradient = [CAGradientLayer layer];
-		gradient.frame = cell.bounds;
-		gradient.colors = [NSArray arrayWithObjects:
-						   (id) [[UIColor whiteColor] CGColor],
-						   (id) [[UIColor lightGrayColor] CGColor],
-						   nil];
-		[cell.layer insertSublayer:gradient atIndex:0];
+//		CAGradientLayer *gradient = [CAGradientLayer layer];
+//		gradient.frame = cell.bounds;
+//		gradient.colors = [NSArray arrayWithObjects:
+//						   (id) [[UIColor whiteColor] CGColor],
+//						   (id) [[UIColor lightGrayColor] CGColor],
+//						   nil];
+//		[cell.layer insertSublayer:gradient atIndex:0];
 		
 	} else {
 		// NSLog(@"Cell reused");
