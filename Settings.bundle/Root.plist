@@ -12,26 +12,7 @@
 			<key>Title</key>
 			<string>User Interface</string>
 		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Key</key>
-			<string>button_position</string>
-			<key>Title</key>
-			<string>Button Position</string>
-			<key>Titles</key>
-			<array>
-				<string>mittig</string>
-				<string>rechts</string>
-			</array>
-			<key>Values</key>
-			<array>
-				<string>ProductCellv7</string>
-				<string>ProductCellv6</string>
-			</array>
-			<key>DefaultValue</key>
-			<string>ProductCellv6</string>
-		</dict>
+		<dict/>
 	</array>
 </dict>
 </plist>

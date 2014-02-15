@@ -14,12 +14,12 @@
 
 @implementation ProductCell
 @synthesize nameLabel;
+@synthesize countLabel;
+@synthesize plusButton;
+@synthesize minusButton;
 @synthesize imageView;
-//@synthesize countLabel;
 @synthesize priceLabel;
 @synthesize product;
-@synthesize segmentedControl;
-@synthesize textView;
 
 - (id)initWithStyle:(UITableViewCellStyle)style 
 	reuseIdentifier:(NSString *)reuseIdentifier {
@@ -33,10 +33,11 @@
 	[nameLabel	release];
 	[priceLabel release];
 	[imageView	release];
-	//[countLabel release];
+    [plusButton release];
+    [minusButton release];
+	[countLabel release];
 	[product	release];
-	[segmentedControl release];
-	[textView release];
+
 	
 	[super dealloc];
 }
@@ -56,24 +57,19 @@
 -(IBAction) updateCount:(id)sender 
 {
 	NSString *newVal = [[[NSString alloc]initWithFormat:@"%d", self.product.multiplier] autorelease];
-	//countLabel.text = newVal;
-	[segmentedControl setTitle:newVal forSegmentAtIndex:1];	
+	countLabel.text = newVal;
 }
 
 -(IBAction) incCount:(id)sender {
 	[self.product incMultiplier];
 	[self updateCount:sender];
-	if (product.multiplier > 0) {
-		[self.segmentedControl setEnabled:YES forSegmentAtIndex:0];
-	}
+    [[UIDevice currentDevice] playInputClick];
 }
 
 -(IBAction) decCount:(id)sender {
 	[self.product decMultiplier];
 	[self updateCount:sender];
-	if (product.multiplier == 0) {
-		[self.segmentedControl setEnabled:NO forSegmentAtIndex:0];
-	}
+    [[UIDevice currentDevice] playInputClick];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath 
@@ -84,34 +80,9 @@
 	[self updateCount:nil];
 }
 
--(IBAction) segmentedControlPressed:(id) sender
-{
-	UISegmentedControl *control = (UISegmentedControl *) sender;
-	if (0 == control.selectedSegmentIndex ) {
-		[self playSound:sender];
-		[self decCount:sender];
-	} else if (1 == control.selectedSegmentIndex ) {
-		// TODO: manage keyboard input
-		// see http://developer.apple.com/library/ios/#documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html		
-		// display numbers keyboard
-		// scroll list to display current element
-		
-		// update tiltle of segment http://stackoverflow.com/questions/8176749/editable-text-inside-uisegmentedcontroller
-		
-	} else {
-		[self playSound:sender];
-		[self incCount:sender];
-	}
-
+- (BOOL)enableInputClicksWhenVisible {
+    return YES;
 }
 
-// TODO move into AppDelegate
-- (IBAction) playSound:(id) sender 
-{
-	// NSLog(@"play tock");
-
-	PfandrechnerAppDelegate *app = (PfandrechnerAppDelegate *) [[UIApplication sharedApplication] delegate];
-	[app.player play];
-}
 
 @end

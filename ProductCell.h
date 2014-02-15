@@ -15,10 +15,9 @@
 	IBOutlet UILabel *nameLabel;
 	IBOutlet UILabel *priceLabel;
 	IBOutlet UIImageView *imageView;
-	//IBOutlet UITextField *countField;
-	//IBOutlet UILabel *countLabel;
-	IBOutlet UISegmentedControl *segmentedControl;
-	IBOutlet UITextView *textView;
+    IBOutlet UILabel *countLabel;
+	IBOutlet UIButton *minusButton;
+	IBOutlet UIButton *plusButton;
 	
 	Product *product;
 }
@@ -26,16 +25,13 @@
 @property (nonatomic, retain) UILabel *nameLabel;
 @property (nonatomic, retain) UILabel *priceLabel;
 @property (nonatomic, retain) UIImageView *imageView;
-//@property (nonatomic, retain) UITextField *countField;
-//@property (nonatomic, retain) UILabel *countLabel;
-@property (nonatomic, retain) UISegmentedControl *segmentedControl;
-@property (nonatomic, retain) UITextView *textView;
+@property (nonatomic, retain) UILabel *countLabel;
+@property (nonatomic, retain) UIButton *minusButton;
+@property (nonatomic, retain) UIButton *plusButton;
 @property (nonatomic, retain) Product *product;
 
 -(IBAction) incCount:	(id)sender;
 -(IBAction) decCount:	(id)sender;
--(IBAction) segmentedControlPressed:(id) sender;
 -(IBAction) updateCount:(id)sender;
--(IBAction) playSound:  (id) sender;
 
 @end

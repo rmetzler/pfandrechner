@@ -25,7 +25,6 @@
 		79819A99134CB7C10076B852 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819A98134CB7C10076B852 /* CoreFoundation.framework */; };
 		79819B07134CBE0A0076B852 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B06134CBE0A0076B852 /* AudioToolbox.framework */; };
 		79819B3D134CC2AD0076B852 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79819B3C134CC2AD0076B852 /* AVFoundation.framework */; };
-		7990B3181352718400DBC696 /* ProductCellv7.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7990B3171352718400DBC696 /* ProductCellv7.xib */; };
 		799D47D51328E0430047C14B /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 799D47D41328E0430047C14B /* Product.m */; };
 		79C92286134A5829006B7818 /* icon-small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C9227F134A5829006B7818 /* icon-small-50.png */; };
 		79C92287134A5829006B7818 /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C92280134A5829006B7818 /* icon-small.png */; };
@@ -63,7 +62,6 @@
 		79819A98134CB7C10076B852 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		79819B06134CBE0A0076B852 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		79819B3C134CC2AD0076B852 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		7990B3171352718400DBC696 /* ProductCellv7.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellv7.xib; sourceTree = "<group>"; };
 		799D47D31328E0430047C14B /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		799D47D41328E0430047C14B /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		79C9227F134A5829006B7818 /* icon-small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small-50.png"; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Pfandrechner-Info.plist */,
 				79E757ED134FBA8F004DC536 /* ProductCellv6.xib */,
-				7990B3171352718400DBC696 /* ProductCellv7.xib */,
 				7977582D135DC8D100E539E5 /* Entitlements.plist */,
 			);
 			name = Resources;
@@ -250,7 +247,6 @@
 				79C9228A134A5829006B7818 /* icon@2x.png in Resources */,
 				79C9228B134A5829006B7818 /* iTunesArtwork in Resources */,
 				79E757EE134FBA8F004DC536 /* ProductCellv6.xib in Resources */,
-				7990B3181352718400DBC696 /* ProductCellv7.xib in Resources */,
 				794812991358C8080072D515 /* Settings.bundle in Resources */,
 				79ED24101359BA19001B8C8E /* img5 in Resources */,
 				7977582E135DC8D100E539E5 /* Entitlements.plist in Resources */,

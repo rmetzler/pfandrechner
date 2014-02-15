@@ -70,7 +70,7 @@
 			 [[[Product alloc] initWithPrice:0.15 image: @"cola.png"    description: @"Plastikflasche Mehrweg"] autorelease],
 			 [[[Product alloc] initWithPrice:0.25 image: @"wasser.png"  description: @"Plastikflasche Einweg"] autorelease],
 			 [[[Product alloc] initWithPrice:0.08 image: @"bier2.png"   description: @"Bierflasche (Glas)"] autorelease],
-			 [[[Product alloc] initWithPrice:0.15 image: @"bier1.png"   description: @"Bierflasche mit Bügel (Glas)"] autorelease],
+			 [[[Product alloc] initWithPrice:0.15 image: @"bier1.png"   description: @"Bügelflasche"] autorelease],
 			 [[[Product alloc] initWithPrice:0.25 image: @"dose.png"   description: @"Dose"] autorelease],
 			 [[[Product alloc] initWithPrice:0.15 image: @"joghurt.png" description: @"Joghurt Glas"] autorelease],
 			 [[[Product alloc] initWithPrice:2.40 image: @"6er-saftkasten-voll.png" description: @"6er Saftkasten voll"] autorelease],
@@ -165,7 +165,7 @@
     ProductCell *cell = (ProductCell *) [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
 	if (cell == nil) {
-		NSString *nibFile = [ [NSUserDefaults standardUserDefaults] stringForKey:@"button_position"];
+		NSString *nibFile = @"ProductCellv6";
 		if (nil == nibFile) {
 			nibFile = kCustomCellNib;
 		}
@@ -174,15 +174,7 @@
 												  options:nil];
 		
         cell = [nib objectAtIndex:0];
-		
-//		CAGradientLayer *gradient = [CAGradientLayer layer];
-//		gradient.frame = cell.bounds;
-//		gradient.colors = [NSArray arrayWithObjects:
-//						   (id) [[UIColor whiteColor] CGColor],
-//						   (id) [[UIColor lightGrayColor] CGColor],
-//						   nil];
-//		[cell.layer insertSublayer:gradient atIndex:0];
-		
+				
 	} else {
 		// NSLog(@"Cell reused");
 	}
@@ -200,7 +192,12 @@
 	cell.nameLabel.text = product.description;
 	cell.priceLabel.text = [NSString stringWithFormat:@"%1.2f€", product.multiplicant];
 	
-	
+    UIColor * color = [UIColor colorWithRed:87/255.0f green:87/255.0f blue:127/255.0f alpha:1.0f];	cell.plusButton.backgroundColor = color;
+    cell.minusButton.backgroundColor = color;
+    
+    cell.plusButton.layer.cornerRadius = 5;
+    cell.minusButton.layer.cornerRadius = 5;
+    
 	[cell updateCount:nil];
 	
 	[product addObserver:self forKeyPath:@"multiplier" options:NSKeyValueChangeSetting context:cell];
